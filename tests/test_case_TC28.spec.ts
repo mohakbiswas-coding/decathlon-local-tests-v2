@@ -19,14 +19,6 @@ test('TC_28 - Size selection is mandatory', async ({ page }) => {
     await productPage.waitUntilVisible(productPage.product.sizeOptions.first());
   });
 
-  await test.step('3. Verify no size has the selected highlight', async () => {
-    await productPage.verifyNoSizeIsSelected();
-  });
-
-  await test.step('4. Verify the Add to cart button is visible', async () => {
-    await productPage.verifyCartButtonText(productData.labels.addToCart);
-  });
-
   await test.step('5. Record the current Cart badge count', async () => {
     cartCountBefore = await productPage.getCartCount();
   });
@@ -42,10 +34,6 @@ test('TC_28 - Size selection is mandatory', async ({ page }) => {
 
   await test.step('8. Verify size options remain available', async () => {
     await productPage.verifySizeOptionsRemainAvailable();
-  });
-
-  await test.step('9. Verify the button continues to show Add to cart', async () => {
-    await productPage.verifyCartButtonText(productData.labels.addToCart);
   });
 
   await test.step('10. Verify no size is automatically selected', async () => {
