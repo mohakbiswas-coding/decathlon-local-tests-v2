@@ -23,6 +23,7 @@ export class ProductDetailsLocators {
 
   // ---- colour ----
   readonly colourThumbnails: Locator;
+  readonly colorOptions: Locator;
 
   // ---- size and cart ----
   readonly sizeSection: Locator;
@@ -32,6 +33,7 @@ export class ProductDetailsLocators {
   readonly lowStockLabel: Locator;
   /** One button that reads "Add to cart" first and "Go to cart" after adding. */
   readonly cartActionButton: Locator;
+  readonly gotoCartButton: Locator;
 
   constructor(private readonly page: Page) {
     this.brand = page.getByTestId('pdp-product-info-desktop:brand');
@@ -41,20 +43,22 @@ export class ProductDetailsLocators {
     this.pageNotFound = page.getByText(/page not found/i);
     this.applicationError = page.getByText(/something went wrong|application error/i); // verify with Inspect
 
-    this.breadcrumbs = page.locator('nav[aria-label*="readcrumb" i]').or(page.getByTestId('breadcrumb:container')); // verify with Inspect
+    this.breadcrumbs = page.locator('nav[aria-label*="readcrumb" i]').or(page.getByTestId('breadcrumbs-desktop:breadcrumbs'));
     this.productId = page.getByText(/^ID\s*:?\s*\d+/).first(); // verify with Inspect
-    this.mrp = page.getByTestId('pdp-price-desktop:mrp'); // verify with Inspect
-    this.ratingValue = page.getByTestId('pdp-product-info-desktop:rating'); // verify with Inspect
-    this.reviewLink = page.getByTestId('pdp-product-info-desktop:review-link'); // verify with Inspect
+    this.mrp = page.getByTestId('pdp-price-desktop:mrp');
+    this.ratingValue = page.getByTestId('pdp-rating-desktop:value');
+    this.reviewLink = page.getByTestId('pdp-rating-desktop:review-button');
 
-    this.colourThumbnails = page.getByTestId('pdp-colour-selector:thumbnail'); // verify with Inspect
+    this.colourThumbnails = page.getByTestId('pdp-color-selector-desktop:title');
+    this.colorOptions = page.getByTestId('pdp-color-selector-desktop:option-button');
 
-    this.sizeSection = page.getByTestId('pdp-size-selector:container'); // verify with Inspect
-    this.sizeOptions = page.getByTestId('pdp-size-selector:size-button'); // verify with Inspect
+    this.sizeSection = page.getByTestId('pdp-size-selector-desktop:title');
+    this.sizeOptions = page.locator("ul[data-test-id='pdp-size-selector-desktop:grid'] > li > button");
     this.enabledSizeOptions = this.sizeOptions.and(page.locator(':not([disabled])'));
     this.sizeError = page.getByTestId('pdp-size-selector:error'); // verify with Inspect
     this.lowStockLabel = page.getByTestId('pdp-size-selector:low-stock'); // verify with Inspect
-    this.cartActionButton = page.getByRole('button', { name: /add to cart|go to cart/i }).first();
+    this.cartActionButton = page.getByRole('button', { 'name' : 'Add to cart' });
+    this.gotoCartButton = page.getByTestId('button');
   }
 
   /** The size button whose text is the given size, e.g. "6.5". */

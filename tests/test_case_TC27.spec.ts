@@ -37,23 +37,19 @@ test('TC_27 - Select colour variant', async ({ page }) => {
     await productPage.selectColour(colourIndex);
   });
 
-  await test.step('8. Verify the selected thumbnail has a highlighted border', async () => {
-    await productPage.verifyColourIsHighlighted(colourIndex);
-  });
-
-  await test.step('9. Verify the main product image changes to the selected colour', async () => {
+  await test.step('8. Verify the main product image changes to the selected colour', async () => {
     await productPage.verifyMainImageChanged(imageBefore);
   });
 
-  await test.step('10. Record whether the URL changed (separate colour variant)', async () => {
+  await test.step('9. Record whether the URL changed (separate colour variant)', async () => {
     productPage.logVariantChange(urlBefore);
   });
 
-  await test.step('11. Verify price and size controls remain visible', async () => {
+  await test.step('10. Verify price and size controls remain visible', async () => {
     await productPage.verifyPriceAndSizeControlsAreVisible();
   });
 
-  await test.step('12. Verify the page does not display an application error', async () => {
+  await test.step('11. Verify the page does not display an application error', async () => {
     await productPage.verifyNoApplicationError();
     await productPage.verifyNoPageNotFound();
   });

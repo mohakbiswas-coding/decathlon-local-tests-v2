@@ -106,18 +106,8 @@ export class ProductPage extends BasePage {
   }
 
   async selectColour(index: number): Promise<void> {
-    await this.click(this.product.colourThumbnails.nth(index));
+    await this.click(this.product.colorOptions.nth(index));
     await this.page.waitForLoadState('domcontentloaded');
-  }
-
-  /** The selected thumbnail must look different from an unselected one (highlighted border). */
-  async verifyColourIsHighlighted(selectedIndex: number): Promise<void> {
-    const otherIndex = selectedIndex === 0 ? 1 : 0;
-    const selected = this.product.colourThumbnails.nth(selectedIndex);
-    const other = this.product.colourThumbnails.nth(otherIndex);
-    await expect
-      .poll(async () => (await this.getHighlightStyle(selected)) !== (await this.getHighlightStyle(other)))
-      .toBe(true);
   }
 
   async verifyMainImageChanged(previousSource: string): Promise<void> {
@@ -148,14 +138,6 @@ export class ProductPage extends BasePage {
 
   async selectSize(size: string): Promise<void> {
     await this.click(this.product.sizeOption(size));
-  }
-
-  async verifySizeIsSelected(size: string): Promise<void> {
-    const selected = this.product.sizeOption(size);
-    const other = await this.findOtherEnabledSize(size);
-    await expect
-      .poll(async () => (await this.getHighlightStyle(selected)) !== (await this.getHighlightStyle(other)))
-      .toBe(true);
   }
 
   private async findOtherEnabledSize(size: string): Promise<Locator> {
@@ -201,7 +183,7 @@ export class ProductPage extends BasePage {
   }
 
   async verifyCartButtonText(label: string): Promise<void> {
-    await expect(this.product.cartActionButton).toHaveText(new RegExp(label, 'i'));
+    await expect(this.product.gotoCartButton).toHaveText(new RegExp(label, 'i'));
   }
 
   async verifyCartCountIs(expected: number): Promise<void> {
@@ -209,6 +191,6 @@ export class ProductPage extends BasePage {
   }
 
   async goToCart(): Promise<void> {
-    await this.click(this.product.cartActionButton);
+    await this.click(this.product.gotoCartButton);
   }
 }

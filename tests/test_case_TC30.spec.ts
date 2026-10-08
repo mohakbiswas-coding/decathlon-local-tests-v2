@@ -24,6 +24,7 @@ test('TC_30 - Cart item verification', async ({ page }) => {
   });
 
   await test.step('1. Click Go to cart', async () => {
+    await page.locator("div[aria-label='Close']").click();
     await productPage.goToCart();
   });
 

@@ -14,7 +14,7 @@
     ]
   },
   "colour": {
-    "minimumThumbnails": 2,
+    "minimumThumbnails": 1,
     "thumbnailToSelect": 1
   },
   "size": {

@@ -14,15 +14,15 @@ export class CartLocators {
   readonly loginToProceed: Locator;
 
   constructor(page: Page) {
-    this.items = page.getByTestId('cart-item'); // verify with Inspect
-    this.itemImage = this.items.first().locator('img').first();
-    this.itemName = this.items.first().getByTestId('cart-item:title'); // verify with Inspect
-    this.itemSize = this.items.first().getByTestId('cart-item:size'); // verify with Inspect
-    this.itemQuantity = this.items.first().getByTestId('cart-item:quantity'); // verify with Inspect
-    this.sellingPrice = this.items.first().getByTestId('cart-item:selling-price'); // verify with Inspect
-    this.mrp = this.items.first().getByTestId('cart-item:mrp'); // verify with Inspect
-    this.summaryDiscount = page.getByTestId('order-summary:discount'); // verify with Inspect
-    this.summaryTotal = page.getByTestId('order-summary:total'); // verify with Inspect
-    this.loginToProceed = page.getByRole('button', { name: /login to proceed/i });
+    this.items = page.getByTestId('in-stock-cart-items');
+    this.itemImage = page.getByTestId("image:cart-product-image");
+    this.itemName = page.getByTestId('text:cart-product-name');
+    this.itemSize = page.getByTestId('selected-size-display');
+    this.itemQuantity = page.getByTestId('qty-display');
+    this.sellingPrice = page.getByTestId('cart:product-selling-price');
+    this.mrp = page.getByTestId('cart:product-mrp-price');
+    this.summaryDiscount = page.getByTestId('cart:cart-checkout-discount');
+    this.summaryTotal = page.locator("div[data-test-id='cart:cart-checkout-total-cart-value'] > p");
+    this.loginToProceed = page.getByRole('button', { 'name' : 'Login to Proceed' });
   }
 }

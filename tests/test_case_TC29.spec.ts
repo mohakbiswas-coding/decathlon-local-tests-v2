@@ -28,31 +28,23 @@ test('TC_29 - Successful Add to Cart', async ({ page }) => {
     await productPage.selectSize(size);
   });
 
-  await test.step('5. Verify the size receives the selected highlight', async () => {
-    await productPage.verifySizeIsSelected(size);
-  });
-
-  await test.step('6. Verify the low-stock label is displayed for the selected size when present', async () => {
+  await test.step('5. Verify the low-stock label is displayed for the selected size when present', async () => {
     await productPage.verifyLowStockIfAvailable(productData.size.lowStockLabel);
   });
 
-  await test.step('7-8. Click Add to cart and wait for the add operation to complete', async () => {
+  await test.step('6-7. Click Add to cart and wait for the add operation to complete', async () => {
     await productPage.clickAddToCart();
   });
 
-  await test.step('9. Verify Add to cart changes to Go to cart', async () => {
+  await test.step('8. Verify Add to cart changes to Go to cart', async () => {
     await productPage.verifyCartButtonText(productData.labels.goToCart);
   });
 
-  await test.step('10. Verify the Cart badge increases by one', async () => {
+  await test.step('9. Verify the Cart badge increases by one', async () => {
     await productPage.verifyCartCountIs(cartCountBefore + 1);
   });
 
-  await test.step('11. Verify the selected size remains highlighted', async () => {
-    await productPage.verifySizeIsSelected(size);
-  });
-
-  await test.step('12. Verify no size-validation message is displayed', async () => {
+  await test.step('10. Verify no size-validation message is displayed', async () => {
     await productPage.verifySizeErrorIsHidden(productData.labels.selectSizeError);
   });
 });

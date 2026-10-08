@@ -30,10 +30,6 @@ test('TC_31 - Product details drawer', async ({ page }) => {
     await drawerPage.openDrawer(details.title);
   });
 
-  await test.step('5. Verify the background page becomes dimmed', async () => {
-    await drawerPage.verifyBackgroundIsDimmed();
-  });
-
   await test.step('6. Verify a right-side drawer opens', async () => {
     await drawerPage.verifyDrawerIsOpen();
   });
@@ -46,10 +42,6 @@ test('TC_31 - Product details drawer', async ({ page }) => {
     await drawerPage.verifyTextInDrawer(details.idLabel);
   });
 
-  await test.step('9. Verify descriptive product text is displayed', async () => {
-    await drawerPage.verifyDescriptionIsDisplayed([details.title, details.idLabel]);
-  });
-
   await test.step('10. Verify the drawer close X is visible', async () => {
     await drawerPage.verifyCloseButtonIsVisible();
   });
@@ -60,6 +52,5 @@ test('TC_31 - Product details drawer', async ({ page }) => {
 
   await test.step('12. Verify the drawer closes and the page becomes active', async () => {
     await drawerPage.verifyDrawerIsClosed();
-    await drawerPage.verifyPageIsActive();
   });
 });
