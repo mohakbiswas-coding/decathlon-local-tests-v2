@@ -5,7 +5,7 @@ export class HeaderLocators {
   readonly searchField: Locator;
 
   constructor(page: Page) {
-    this.logo = page.locator('[data-test-id="header-desktop:logo-link"]');
-    this.searchField = page.locator('[data-test-id="search-input-desktop:container"]');
+    this.logo = page.getByTestId("header-desktop:logo-link");
+    this.searchField = page.getByTestId("search-input-desktop:container");
   }
 }

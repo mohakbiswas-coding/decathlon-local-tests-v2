@@ -10,11 +10,8 @@ export class SearchLocators {
 
   constructor(page: Page) {
     this.backdrop = page.locator('[data-test-id="search-box-desktop:backdrop"]');
-    this.overlayInput = page.locator(
-      '[data-test-id="search-box-desktop:container"] input, ' +
-      '[data-test-id="search-input-desktop:container"] input'
-    ).first();
-    this.trendingSearchesTitle = page.locator('[data-test-id="trending-search:title"]');
+    this.overlayInput = page.getByTestId("search-input-desktop:container").first();
+    this.trendingSearchesTitle = page.getByTestId("trending-search:title");
     this.recommendedForYouTitle = page.getByText('Recommended For You', { exact: true });
     this.bestsellersTitle = page.getByText('Bestsellers', { exact: true });
     this.closeButton = page.locator(
