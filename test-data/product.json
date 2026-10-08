@@ -1,0 +1,76 @@
+{
+  "urls": {
+    "pdp": "/p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white",
+    "productPath": "/p/"
+  },
+  "product": {
+    "id": "8873071",
+    "brand": "KIPRUN",
+    "name": "Kiprun Kipcore black and white",
+    "breadcrumbs": [
+      "Sports Footwear",
+      "Shoes",
+      "Running Shoes"
+    ]
+  },
+  "colour": {
+    "minimumThumbnails": 2,
+    "thumbnailToSelect": 1
+  },
+  "size": {
+    "toSelect": "6.5",
+    "lowStockLabel": "3 left"
+  },
+  "labels": {
+    "addToCart": "Add to cart",
+    "goToCart": "Go to cart",
+    "selectSizeError": "Please select a size"
+  },
+  "drawers": {
+    "details": {
+      "title": "Product details",
+      "idLabel": "ID: 8873071"
+    },
+    "specifications": {
+      "title": "Product specifications",
+      "furtherEntries": [
+        "Removable insole",
+        "Shoe height"
+      ],
+      "items": [
+        {
+          "label": "Distance",
+          "value": "From 1 to 10 km"
+        },
+        {
+          "label": "Weight (in g)",
+          "value": "264 g"
+        },
+        {
+          "label": "Frequency",
+          "value": "Regular,intensive"
+        },
+        {
+          "label": "Foot width",
+          "value": "Medium"
+        }
+      ]
+    }
+  },
+  "delivery": {
+    "triggerText": "Select delivery location",
+    "drawerTitle": "Select delivery location",
+    "guestLoginText": "Login for personalised experience",
+    "invalidPincode": "723000",
+    "invalidPincodeError": "Unable to find location for this pincode"
+  },
+  "reviews": {
+    "heading": "Reviews",
+    "overallRating": "4.7",
+    "attributes": [
+      "Fitting comfort"
+    ],
+    "viewAllText": "View all reviews",
+    "entriesToCheck": 2
+  }
+}

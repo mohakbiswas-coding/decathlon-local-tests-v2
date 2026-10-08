@@ -1,0 +1,11 @@
+{
+  "quantity": "1",
+  "brand": "KIPRUN",
+  "prices": {
+    "selling": "4999",
+    "mrp": "6499",
+    "discount": "1500",
+    "total": "4999"
+  },
+  "guestCheckoutText": "Login to Proceed"
+}
