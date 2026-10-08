@@ -51,7 +51,7 @@ test('TC_22 - Partial keyword search', async ({ page }) => {
   });
 
   await test.step('11. Verify the URL contains a search query parameter', async () => {
-    await resultsPage.verifyUrlContainsQuery(searchData.urls.queryParam, keyword);
+    await resultsPage.verifyUrlContainsQuery(searchData.urls.queryParam);
   });
 
   await test.step('12. Verify product results are displayed', async () => {

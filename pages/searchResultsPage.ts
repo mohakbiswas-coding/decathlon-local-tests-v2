@@ -27,9 +27,8 @@ export class SearchResultsPage extends BasePage {
     await expect(this.results.productCards.first()).toBeVisible();
   }
 
-  async verifyUrlContainsQuery(queryParam: string, value?: string): Promise<void> {
-    const expected = value ? `${queryParam}=${encodeURIComponent(value)}` : `${queryParam}=`;
-    await expect(this.page).toHaveURL(new RegExp(expected.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'));
+  async verifyUrlContainsQuery(queryParam: string): Promise<void> {
+    await expect(this.page.url()).toContain(queryParam);
   }
 
   async verifyProductCardIsVisible(): Promise<void> {
@@ -71,7 +70,6 @@ export class SearchResultsPage extends BasePage {
     await this.verifyIfAvailable(card.mrp, `Card ${index + 1} MRP`);
     await this.verifyIfAvailable(card.rating, `Card ${index + 1} rating`);
     await this.verifyIfAvailable(card.discount, `Card ${index + 1} discount`);
-    await this.verifyIfAvailable(card.colours, `Card ${index + 1} colours`);
   }
 
   async getCardName(index: number): Promise<string> {

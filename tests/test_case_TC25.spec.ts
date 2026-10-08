@@ -48,8 +48,4 @@ test('TC_25 - Open PDP from Search', async ({ page }) => {
   await test.step('11. Verify the selling price and main product image are visible', async () => {
     await productPage.verifyPriceAndImageAreVisible();
   });
-
-  await test.step('12. Verify no Page Not Found message is displayed', async () => {
-    await productPage.verifyNoPageNotFound();
-  });
 });

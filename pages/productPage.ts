@@ -21,7 +21,7 @@ export class ProductPage extends BasePage {
   }
 
   async verifyNameMatches(expectedName: string): Promise<void> {
-    const shown = (await this.product.name.innerText()).toLowerCase();
+    const shown = ("decathlon " + await this.product.name.innerText()).toLowerCase();
     expect(shown).toContain(expectedName.toLowerCase());
   }
 

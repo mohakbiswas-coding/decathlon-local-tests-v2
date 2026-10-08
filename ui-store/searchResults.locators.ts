@@ -6,8 +6,8 @@ export class SearchResultsLocators {
   readonly loader: Locator;
 
   constructor(page: Page) {
-    this.heading = page.locator('h1').first();
-    this.productCards = page.getByTestId('product-card'); // verify with Inspect
+    this.heading = page.locator("div[class*='md:text-size']");
+    this.productCards = page.getByTestId('product-card-link');
     this.loader = page.getByTestId('loader'); // verify with Inspect
   }
 }

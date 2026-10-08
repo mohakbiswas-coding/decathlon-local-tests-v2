@@ -8,19 +8,17 @@ export class ProductCardLocators {
   readonly mrp: Locator;
   readonly rating: Locator;
   readonly discount: Locator;
-  readonly colours: Locator;
   readonly wishlist: Locator;
   readonly addToCart: Locator;
 
   constructor(card: Locator) {
     this.image = card.locator('img').first();
-    this.name = card.getByTestId('product-card:name'); // verify with Inspect
-    this.price = card.getByTestId('product-card:price'); // verify with Inspect
-    this.mrp = card.getByTestId('product-card:mrp'); // verify with Inspect
-    this.rating = card.getByTestId('product-card:rating'); // verify with Inspect
-    this.discount = card.getByTestId('product-card:discount'); // verify with Inspect
-    this.colours = card.getByTestId('product-card:colours'); // verify with Inspect
-    this.wishlist = card.getByRole('button', { name: /wishlist/i });
-    this.addToCart = card.getByRole('button', { name: /add to cart/i });
+    this.name = card.getByTestId('product-card:product-card:title');
+    this.price = card.getByTestId('product-card-product-card:selling-price');
+    this.mrp = card.getByTestId('product-card-product-card:mrp');
+    this.rating = card.getByTestId('product-card:review-count');
+    this.discount = card.getByTestId('product-card-product-card:discount');
+    this.wishlist = card.getByTestId("add-to-wishlist-button");
+    this.addToCart = card.getByTestId("add-to-cart-button");
   }
 }

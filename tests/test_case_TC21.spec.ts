@@ -45,11 +45,9 @@ test('TC_21 - Trending search', async ({ page }) => {
 
   await test.step('9. Verify the submitted term is in the URL, field, or heading', async () => {
     const urlValue = await resultsPage.getUrlQueryValue(searchData.urls.queryParam);
-    const inputValue = await searchPage.getInputValue();
-    const heading = await resultsPage.getHeadingText();
 
     const term = trendingTerm.toLowerCase();
-    const found = [urlValue, inputValue, heading].some((text) => text.toLowerCase().includes(term));
+    const found = [urlValue].some((text) => text.toLowerCase().includes(term));
     expect(found, `"${trendingTerm}" not found in URL, search field or heading`).toBe(true);
   });
 

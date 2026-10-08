@@ -1,7 +1,8 @@
 {
   "searchKeyword": "Shoes for men",
   "partialKeyword": "Cy",
-  "unrelatedKeyword": "zzz-no-product-98765",
+  "unrelatedKeywordExpected": "Sorry, No Results Found...!",
+  "unrelatedKeyword": "mklfmsmclkfjskhlkhjs8989898978",
   "overlaySections": {
     "recommended": "Recommended For You",
     "bestsellers": "Bestsellers"

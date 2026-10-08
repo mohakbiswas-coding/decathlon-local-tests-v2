@@ -17,7 +17,7 @@ export class SearchPage extends BasePage {
   }
 
   async verifySearchInputIsVisible(): Promise<void> {
-    await expect(this.search.overlayInput).toBeVisible();
+    await expect(this.search.searchInput).toBeVisible();
   }
 
   // On the site the backdrop is the control that dismisses the overlay.
