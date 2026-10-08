@@ -1,4 +1,15 @@
 {
   "searchKeyword": "Shoes for men",
-  "notes": "The keyword is available for future manual-search coverage. This overlay open/close flow does not type a keyword."
+  "partialKeyword": "Cy",
+  "unrelatedKeyword": "zzz-no-product-98765",
+  "overlaySections": {
+    "recommended": "Recommended For You",
+    "bestsellers": "Bestsellers"
+  },
+  "urls": {
+    "searchResults": "/search?query=",
+    "queryParam": "query",
+    "productPath": "/p/"
+  },
+  "cardsToCheck": 2
 }
