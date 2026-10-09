@@ -13,15 +13,19 @@ export class DrawerPage extends BasePage {
   }
 
   // ---- open / close ----
-  async scrollToTrigger(text: string): Promise<void> {
+  async openProduct(drawerUrl: string): Promise<void> {
+    await this.open(drawerUrl);
+  }
+
+  async scrollToTrigger(): Promise<void> {
     await this.scrollTo(this.drawer.productDetails);
   }
 
-  async verifyTriggerIsVisible(text: string): Promise<void> {
+  async verifyTriggerIsVisible(): Promise<void> {
     await expect(this.drawer.productDetails).toBeVisible();
   }
 
-  async openDrawer(triggerText: string): Promise<void> {
+  async openDrawer(): Promise<void> {
     await this.click(this.drawer.productDetails);
   }
 
@@ -29,7 +33,7 @@ export class DrawerPage extends BasePage {
     await expect(this.drawer.ProdDetailsdrawer).toBeVisible();
   }
 
-  async verifyDrawerHeading(title: string): Promise<void> {
+  async verifyDrawerHeading(): Promise<void> {
     await expect(this.drawer.productDetails).toBeVisible();
   }
 

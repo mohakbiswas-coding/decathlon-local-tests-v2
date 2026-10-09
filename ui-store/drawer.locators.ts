@@ -21,7 +21,7 @@ export class DrawerLocators {
     this.PinCodeDrawer = page.getByTestId('pdp-delivery-options-desktop:change-pincode');
     this.pincodeInput = page.getByTestId("location-promt-desktop:pincode-input-field");
     this.pincodeSubmit = page.getByTestId('location-promt-desktop:pincode-submit-button');
-    this.productDetails = page.locator("button[data-test-id='pdp-product-tabs-desktop:tab-button-product-details']");
+    this.productDetails = page.locator('[data-test-id="pdp-product-tabs-desktop:tab-button-product-details"]');
     this.drawerText = page.getByTestId("pdp-product-tabs-desktop:drawer-product-description");
     this.drawerLoginMessage = page.locator("div[class='mt-2.5 text-sm text-rock-400']");
     this.pinCodeError = page.getByTestId("location-promt-desktop:pincode-error-text");

@@ -11,13 +11,13 @@ export class ReviewsLocators {
   readonly reviewMeta: Locator;
 
   constructor(private readonly page: Page) {
-    this.section = page.getByTestId('pdp-reviews:container'); // verify with Inspect
-    this.overallRating = this.section.getByTestId('pdp-reviews:overall-rating'); // verify with Inspect
-    this.reviewCountLink = this.section.getByTestId('pdp-reviews:review-count'); // verify with Inspect
-    this.ratingDistribution = this.section.getByTestId('pdp-reviews:rating-distribution'); // verify with Inspect
-    this.reviewEntries = this.section.getByTestId('pdp-reviews:review-card'); // verify with Inspect
-    this.reviewTitles = this.section.getByTestId('pdp-reviews:review-title'); // verify with Inspect
-    this.reviewMeta = this.section.getByTestId('pdp-reviews:review-meta'); // verify with Inspect
+    this.section = page.getByTestId('pdp-reviews-desktop:wrapper');
+    this.overallRating = this.section.getByTestId('pdp-average-rating-desktop:score');
+    this.reviewCountLink = this.section.getByTestId('pdp-average-rating-desktop:count');
+    this.ratingDistribution = this.section.getByTestId('pdp-average-rating-desktop:distribution-list');
+    this.reviewEntries = this.section.getByTestId('pdp-review-summary-desktop:item-wrapper');
+    this.reviewTitles = this.section.getByTestId('pdp-review-item:title');
+    this.reviewMeta = this.section.getByTestId('pdp-review-item:comment-container');
   }
 
   /** Section heading, e.g. "Reviews". */

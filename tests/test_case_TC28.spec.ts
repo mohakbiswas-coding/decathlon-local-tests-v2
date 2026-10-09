@@ -19,32 +19,32 @@ test('TC_28 - Size selection is mandatory', async ({ page }) => {
     await productPage.waitUntilVisible(productPage.product.sizeOptions.first());
   });
 
-  await test.step('5. Record the current Cart badge count', async () => {
+  await test.step('3. Record the current Cart badge count', async () => {
     cartCountBefore = await productPage.getCartCount();
   });
 
-  await test.step('6. Click Add to cart without selecting a size', async () => {
+  await test.step('4. Click Add to cart without selecting a size', async () => {
     await productPage.clickAddToCart();
   });
 
-  await test.step('7. Verify the red message "Please select a size" appears', async () => {
+  await test.step('5. Verify the red message "Please select a size" appears', async () => {
     await productPage.verifySizeErrorIsVisible(productData.labels.selectSizeError);
     await takeNormalScreenshot(page, 'TC_28 size error message');
   });
 
-  await test.step('8. Verify size options remain available', async () => {
+  await test.step('6. Verify size options remain available', async () => {
     await productPage.verifySizeOptionsRemainAvailable();
   });
 
-  await test.step('10. Verify no size is automatically selected', async () => {
+  await test.step('7. Verify no size is automatically selected', async () => {
     await productPage.verifyNoSizeIsSelected();
   });
 
-  await test.step('11. Verify the Cart badge does not increase', async () => {
+  await test.step('8. Verify the Cart badge does not increase', async () => {
     await productPage.verifyCartCountIs(cartCountBefore);
   });
 
-  await test.step('12. Verify the shopper remains on the Product Details Page', async () => {
+  await test.step('9. Verify the shopper remains on the Product Details Page', async () => {
     await productPage.verifyStillOnProductPage(productData.urls.productPath);
   });
 });
