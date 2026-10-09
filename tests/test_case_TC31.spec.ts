@@ -17,6 +17,7 @@ test('TC_31 - Product details drawer', async ({ page }) => {
   });
 
   await test.step('2. Scroll to the information section', async () => {
+    await page.mouse.wheel(0, 1000);
     await drawerPage.scrollToTrigger();
   });
 

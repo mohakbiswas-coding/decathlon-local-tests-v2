@@ -14,6 +14,10 @@ export class DrawerLocators {
   readonly drawerText: Locator;
   readonly drawerLoginMessage: Locator;
   readonly pinCodeError: Locator;
+  readonly drawerId: Locator;
+  readonly drawerClose: Locator;
+  readonly prodSpecifications: Locator;
+  readonly prodSpecButton: Locator;
 
   constructor(private readonly page: Page) {
     this.ProdDetailsdrawer = page.getByTestId('pdp-product-tabs-desktop:drawer-title-product-details');
@@ -22,8 +26,12 @@ export class DrawerLocators {
     this.pincodeInput = page.getByTestId("location-promt-desktop:pincode-input-field");
     this.pincodeSubmit = page.getByTestId('location-promt-desktop:pincode-submit-button');
     this.productDetails = page.locator('[data-test-id="pdp-product-tabs-desktop:tab-button-product-details"]');
+    this.drawerId = page.getByTestId("pdp-product-tabs-desktop:drawer-product-id");
     this.drawerText = page.getByTestId("pdp-product-tabs-desktop:drawer-product-description");
     this.drawerLoginMessage = page.locator("div[class='mt-2.5 text-sm text-rock-400']");
     this.pinCodeError = page.getByTestId("location-promt-desktop:pincode-error-text");
+    this.drawerClose = page.locator("button[class*='flex h-12 w-12']").first();
+    this.prodSpecifications = page.getByTestId("pdp-product-tabs-desktop:drawer-title-product-specifications");
+    this.prodSpecButton = page.getByTestId("pdp-product-tabs-desktop:tab-button-title-product-specifications");
   }
 }

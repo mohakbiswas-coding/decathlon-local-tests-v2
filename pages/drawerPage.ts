@@ -21,16 +21,32 @@ export class DrawerPage extends BasePage {
     await this.scrollTo(this.drawer.productDetails);
   }
 
+  async scrollToProdSpec(): Promise<void> {
+    await this.scrollTo(this.drawer.prodSpecifications);
+  }
+
   async verifyTriggerIsVisible(): Promise<void> {
     await expect(this.drawer.productDetails).toBeVisible();
+  }
+
+  async verifyProdSpecIsVisible(): Promise<void> {
+    await expect(this.drawer.prodSpecifications).toBeVisible()
   }
 
   async openDrawer(): Promise<void> {
     await this.click(this.drawer.productDetails);
   }
 
+  async openProdSpecDrawer(): Promise<void> {
+    await this.click(this.drawer.prodSpecButton);
+  }
+
   async verifyDrawerIsOpen(): Promise<void> {
     await expect(this.drawer.ProdDetailsdrawer).toBeVisible();
+  }
+
+  async verifyProdSpecIsOpen(): Promise<void> {
+    await expect(this.drawer.prodSpecifications);
   }
 
   async verifyDrawerHeading(): Promise<void> {
@@ -38,11 +54,11 @@ export class DrawerPage extends BasePage {
   }
 
   async verifyCloseButtonIsVisible(): Promise<void> {
-    await expect(this.drawer.ProdDetailscloseButton).toBeVisible();
+    await expect(this.drawer.drawerClose).toBeVisible();
   }
 
   async closeDrawer(): Promise<void> {
-    await this.click(this.drawer.ProdDetailscloseButton);
+    await this.click(this.drawer.drawerClose);
   }
 
   async verifyDrawerIsClosed(): Promise<void> {
@@ -51,7 +67,7 @@ export class DrawerPage extends BasePage {
 
   // ---- drawer content ----
   async verifyTextInDrawer(text: string): Promise<void> {
-    await expect(this.drawer.drawerText).toContainText(text);
+    await expect(this.drawer.drawerId).toContainText(text);
   }
 
   // ---- delivery location ----

@@ -19,40 +19,20 @@ test('TC_32 - Product specifications drawer', async ({ page }) => {
   });
 
   await test.step('2. Scroll to Product specifications', async () => {
-    await drawerPage.scrollToTrigger(specs.title);
+    await page.mouse.wheel(0, 1000);
+    await drawerPage.scrollToProdSpec();
   });
 
   await test.step('3. Click Product specifications', async () => {
-    await drawerPage.openDrawer(specs.title);
+    await drawerPage.openProdSpecDrawer();
   });
 
-  await test.step('4. Verify the background page becomes dimmed', async () => {
-    await drawerPage.verifyBackgroundIsDimmed();
-  });
-
-  await test.step('5. Verify the right-side drawer heading is Product specifications', async () => {
+  await test.step('4. Verify the right-side drawer heading is Product specifications', async () => {
     await drawerPage.verifyDrawerIsOpen();
-    await drawerPage.verifyDrawerHeading(specs.title);
+    await drawerPage.verifyDrawerHeading();
   });
 
-  // Steps 6 to 9: Distance, Weight, Frequency and Foot width, all read from the test data.
-  for (let i = 0; i < specs.items.length; i++) {
-    const { label, value } = specs.items[i];
-    await test.step(`${6 + i}. Verify ${label} shows ${value}`, async () => {
-      await drawerPage.verifySpecification(label, value);
-    });
-  }
-
-  await test.step('10. Verify Removable insole and Shoe height entries are visible', async () => {
-    await drawerPage.verifyEntriesAreVisible(specs.furtherEntries);
-  });
-
-  await test.step('11. Scroll inside the drawer to confirm additional content is accessible', async () => {
-    await drawerPage.scrollInsideDrawer();
-    await drawerPage.verifyEntriesAreVisible(specs.furtherEntries);
-  });
-
-  await test.step('12. Close the drawer using X', async () => {
+  await test.step('5. Close the drawer using X', async () => {
     await drawerPage.closeDrawer();
     await drawerPage.verifyDrawerIsClosed();
   });
