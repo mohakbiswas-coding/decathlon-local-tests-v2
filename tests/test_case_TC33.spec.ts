@@ -19,16 +19,16 @@ test('TC_33 - Invalid delivery PIN code', async ({ page }) => {
   });
 
   await test.step('2. Locate the delivery location or PIN-code area', async () => {
-    await drawerPage.scrollToTrigger();
-    await drawerPage.verifyTriggerIsVisible();
+    await page.mouse.wheel(0, 1000);
+    await drawerPage.verifyDeliveryIsVisible();
   });
 
   await test.step('3. Open Select delivery location', async () => {
-    await drawerPage.openDrawer();
+    await drawerPage.openPincodeDrawer();
   });
 
   await test.step('4. Verify the right-side delivery drawer opens', async () => {
-    await drawerPage.verifyDrawerIsOpen();
+    await drawerPage.verifyPincodeDrawerIsOpen();
   });
 
   await test.step('5. Verify the login message is displayed for a guest user', async () => {
@@ -49,7 +49,7 @@ test('TC_33 - Invalid delivery PIN code', async ({ page }) => {
   });
 
   await test.step('12. Close the delivery drawer using X', async () => {
-    await drawerPage.closeDrawer();
+    await drawerPage.closePinCodeDrawer();
     await drawerPage.verifyDrawerIsClosed();
   });
 });

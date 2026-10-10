@@ -1,8 +1,8 @@
-import { expect, Locator, Page } from '@playwright/test';
-import { HeaderLocators } from '../ui-store/header.locators';
-import { ProductDetailsLocators } from '../ui-store/productDetails.locators';
-import { logger } from '../utils/Logger';
-import { BasePage } from './basePage';
+import { expect, Locator, Page } from "@playwright/test";
+import { HeaderLocators } from "../ui-store/header.locators";
+import { ProductDetailsLocators } from "../ui-store/productDetails.locators";
+import { logger } from "../utils/logger";
+import { BasePage } from "./basePage";
 
 /** Product Details Page (PDP). */
 export class ProductPage extends BasePage {
@@ -35,7 +35,9 @@ export class ProductPage extends BasePage {
   }
 
   async verifyNameMatches(expectedName: string): Promise<void> {
-    const shown = ("decathlon " + await this.product.name.innerText()).toLowerCase();
+    const shown = (
+      "decathlon " + (await this.product.name.innerText())
+    ).toLowerCase();
     expect(shown).toContain(expectedName.toLowerCase());
   }
 
@@ -60,16 +62,22 @@ export class ProductPage extends BasePage {
   async verifyBreadcrumbs(expectedItems: string[]): Promise<void> {
     await expect(this.product.breadcrumbs).toBeVisible();
     for (const item of expectedItems) {
-      await expect(this.product.breadcrumbs).toContainText(item, { ignoreCase: true });
+      await expect(this.product.breadcrumbs).toContainText(item, {
+        ignoreCase: true,
+      });
     }
   }
 
   async verifyBrand(expectedBrand: string): Promise<void> {
-    await expect(this.product.brand).toContainText(expectedBrand, { ignoreCase: true });
+    await expect(this.product.brand).toContainText(expectedBrand, {
+      ignoreCase: true,
+    });
   }
 
   async verifyNameContains(expectedName: string): Promise<void> {
-    await expect(this.product.name).toContainText(expectedName, { ignoreCase: true });
+    await expect(this.product.name).toContainText(expectedName, {
+      ignoreCase: true,
+    });
   }
 
   async verifyProductId(expectedId: string): Promise<void> {
@@ -87,7 +95,9 @@ export class ProductPage extends BasePage {
 
   async verifyColourOptionsAreVisible(minimum = 1): Promise<void> {
     await expect(this.product.colourThumbnails.first()).toBeVisible();
-    expect(await this.product.colourThumbnails.count()).toBeGreaterThanOrEqual(minimum);
+    expect(await this.product.colourThumbnails.count()).toBeGreaterThanOrEqual(
+      minimum,
+    );
   }
 
   async verifySizeOptionsAndAddToCartAreVisible(): Promise<void> {
@@ -102,12 +112,12 @@ export class ProductPage extends BasePage {
 
   // ---- colour variants ----
   async getMainImageSource(): Promise<string> {
-    return (await this.product.mainImage.getAttribute('src')) ?? '';
+    return (await this.product.mainImage.getAttribute("src")) ?? "";
   }
 
   async selectColour(index: number): Promise<void> {
     await this.click(this.product.colorOptions.nth(index));
-    await this.page.waitForLoadState('domcontentloaded');
+    await this.page.waitForLoadState("domcontentloaded");
   }
 
   async verifyMainImageChanged(previousSource: string): Promise<void> {
@@ -118,9 +128,13 @@ export class ProductPage extends BasePage {
   logVariantChange(urlBefore: string): void {
     const urlAfter = this.page.url();
     if (urlAfter !== urlBefore) {
-      logger.info(`Colour is a separate variant. URL changed: ${urlBefore} -> ${urlAfter}`);
+      logger.info(
+        `Colour is a separate variant. URL changed: ${urlBefore} -> ${urlAfter}`,
+      );
     } else {
-      logger.info('Colour did not change the URL (same product page, new image)');
+      logger.info(
+        "Colour did not change the URL (same product page, new image)",
+      );
     }
   }
 
@@ -131,9 +145,11 @@ export class ProductPage extends BasePage {
     const styles = new Set<string>();
     const count = await this.product.enabledSizeOptions.count();
     for (let i = 0; i < count; i++) {
-      styles.add(await this.getHighlightStyle(this.product.enabledSizeOptions.nth(i)));
+      styles.add(
+        await this.getHighlightStyle(this.product.enabledSizeOptions.nth(i)),
+      );
     }
-    expect(styles.size, 'a size already looks selected').toBe(1);
+    expect(styles.size, "a size already looks selected").toBe(1);
   }
 
   async selectSize(size: string): Promise<void> {
@@ -156,10 +172,14 @@ export class ProductPage extends BasePage {
 
   async verifyLowStockIfAvailable(label: string): Promise<void> {
     if (await this.isVisible(this.product.lowStockLabel)) {
-      await expect(this.product.lowStockLabel).toContainText(label, { ignoreCase: true });
+      await expect(this.product.lowStockLabel).toContainText(label, {
+        ignoreCase: true,
+      });
       logger.info(`Low-stock label is displayed: ${label}`);
     } else {
-      logger.info('Low-stock label is not displayed (not applicable for this size)');
+      logger.info(
+        "Low-stock label is not displayed (not applicable for this size)",
+      );
     }
   }
 
@@ -174,8 +194,8 @@ export class ProductPage extends BasePage {
   // ---- add to cart ----
   async getCartCount(): Promise<number> {
     if (!(await this.isVisible(this.header.cartBadge))) return 0;
-    const digits = (await this.header.cartBadge.innerText()).replace(/\D/g, '');
-    return digits === '' ? 0 : Number(digits);
+    const digits = (await this.header.cartBadge.innerText()).replace(/\D/g, "");
+    return digits === "" ? 0 : Number(digits);
   }
 
   async clickAddToCart(): Promise<void> {
@@ -183,7 +203,9 @@ export class ProductPage extends BasePage {
   }
 
   async verifyCartButtonText(label: string): Promise<void> {
-    await expect(this.product.gotoCartButton).toHaveText(new RegExp(label, 'i'));
+    await expect(this.product.gotoCartButton).toHaveText(
+      new RegExp(label, "i"),
+    );
   }
 
   async verifyCartCountIs(expected: number): Promise<void> {

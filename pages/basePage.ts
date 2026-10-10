@@ -1,11 +1,11 @@
-import { expect, Locator, Page } from '@playwright/test';
-import { logger } from '../utils/Logger';
+import { expect, Locator, Page } from "@playwright/test";
+import { logger } from "../utils/logger";
 
 export class BasePage {
   constructor(protected readonly page: Page) {}
 
-  async open(path = '/'): Promise<void> {
-    await this.page.goto(path, { waitUntil: 'domcontentloaded' });
+  async open(path = "/"): Promise<void> {
+    await this.page.goto(path, { waitUntil: "domcontentloaded" });
   }
 
   async waitUntilVisible(locator: Locator): Promise<void> {
@@ -21,7 +21,7 @@ export class BasePage {
   }
 
   async pressEnter(locator: Locator): Promise<void> {
-    await locator.press('Enter');
+    await locator.press("Enter");
   }
 
   async scrollTo(locator: Locator): Promise<void> {
@@ -45,7 +45,7 @@ export class BasePage {
   /** Asserts the element shows a money value, e.g. expected "4999" matches "₹4,999". */
   async verifyAmount(locator: Locator, expectedDigits: string): Promise<void> {
     await expect(locator).toBeVisible();
-    const text = (await locator.innerText()).replace(/,/g, '');
+    const text = (await locator.innerText()).replace(/,/g, "");
     expect(text).toMatch(new RegExp(`(^|\\D)${expectedDigits}(\\D|$)`));
   }
 
@@ -53,7 +53,12 @@ export class BasePage {
   async getHighlightStyle(locator: Locator): Promise<string> {
     return locator.evaluate((element) => {
       const style = getComputedStyle(element);
-      return [style.borderTopWidth, style.borderTopColor, style.backgroundColor, style.fontWeight].join('|');
+      return [
+        style.borderTopWidth,
+        style.borderTopColor,
+        style.backgroundColor,
+        style.fontWeight,
+      ].join("|");
     });
   }
 }

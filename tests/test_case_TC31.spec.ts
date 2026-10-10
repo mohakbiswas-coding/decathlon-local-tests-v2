@@ -1,7 +1,6 @@
 import { test } from '@playwright/test';
 import productData from '../test-data/product.json';
 import { DrawerPage } from '../pages/drawerPage';
-import { ProductPage } from '../pages/productPage';
 import { takeErrorScreenshot } from '../utils/ScreenshotUtil';
 
 test.afterEach(async ({ page }, testInfo) => {
@@ -18,7 +17,6 @@ test('TC_31 - Product details drawer', async ({ page }) => {
 
   await test.step('2. Scroll to the information section', async () => {
     await page.mouse.wheel(0, 1000);
-    await drawerPage.scrollToTrigger();
   });
 
   await test.step('3. Verify Product details is visible', async () => {

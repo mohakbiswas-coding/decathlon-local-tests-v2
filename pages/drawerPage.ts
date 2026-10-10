@@ -1,7 +1,7 @@
-import { expect, Page } from '@playwright/test';
-import { DrawerLocators } from '../ui-store/drawer.locators';
-import { logger } from '../utils/Logger';
-import { BasePage } from './basePage';
+import { expect, Page } from "@playwright/test";
+import { DrawerLocators } from "../ui-store/drawer.locators";
+import { logger } from "../utils/logger";
+import { BasePage } from "./basePage";
 
 /** The right-side drawers on the PDP: Product details, Product specifications, Delivery location. */
 export class DrawerPage extends BasePage {
@@ -17,28 +17,20 @@ export class DrawerPage extends BasePage {
     await this.open(drawerUrl);
   }
 
-  async scrollToTrigger(): Promise<void> {
-    await this.scrollTo(this.drawer.productDetails);
-  }
-
-  async scrollToProdSpec(): Promise<void> {
-    await this.scrollTo(this.drawer.prodSpecifications);
+  async openDrawer(): Promise<void> {
+    await this.click(this.drawer.productDetails);
   }
 
   async verifyTriggerIsVisible(): Promise<void> {
     await expect(this.drawer.productDetails).toBeVisible();
   }
 
-  async verifyProdSpecIsVisible(): Promise<void> {
-    await expect(this.drawer.prodSpecifications).toBeVisible()
-  }
-
-  async openDrawer(): Promise<void> {
-    await this.click(this.drawer.productDetails);
-  }
-
   async openProdSpecDrawer(): Promise<void> {
     await this.click(this.drawer.prodSpecButton);
+  }
+
+  async openPincodeDrawer(): Promise<void> {
+    await this.click(this.drawer.PinCodeDrawer);
   }
 
   async verifyDrawerIsOpen(): Promise<void> {
@@ -46,11 +38,23 @@ export class DrawerPage extends BasePage {
   }
 
   async verifyProdSpecIsOpen(): Promise<void> {
-    await expect(this.drawer.prodSpecifications);
+    await expect(this.drawer.prodSpecDrawer).toBeVisible();
+  }
+
+  async verifyPincodeDrawerIsOpen(): Promise<void> {
+    await expect(this.drawer.pinCodeHeading).toBeVisible();
   }
 
   async verifyDrawerHeading(): Promise<void> {
     await expect(this.drawer.productDetails).toBeVisible();
+  }
+
+  async verifyProdSpecHeading(): Promise<void> {
+    await expect(this.drawer.prodSpecDrawer).toBeVisible();
+  }
+
+  async verifyDeliveryIsVisible(): Promise<void> {
+    await expect(this.drawer.deliveryHeading).toBeVisible();
   }
 
   async verifyCloseButtonIsVisible(): Promise<void> {
@@ -72,18 +76,21 @@ export class DrawerPage extends BasePage {
 
   // ---- delivery location ----
   async verifyGuestLoginMessage(): Promise<void> {
-    await expect(this.drawer.drawerLoginMessage).toBeVisible();
+    await expect(this.drawer.pinCodeLoginMessage).toBeVisible();
   }
 
   async enterPincode(pincode: string): Promise<void> {
-    await this.drawer.PinCodeDrawer.click();
     await this.waitUntilVisible(this.drawer.pincodeInput);
-    await this.type(this.drawer.pincodeInput, '');
-    await this.type(this.drawer.pincodeInput, pincode);
+    await this.click(this.drawer.pincodeInput);
+    await this.drawer.pincodeInput.fill(pincode);
   }
 
   async submitPincode(): Promise<void> {
     await this.click(this.drawer.pincodeSubmit);
+  }
+
+  async closePinCodeDrawer(): Promise<void> {
+    await this.click(this.drawer.closePinCodeDrawer);
   }
 
   async verifyPincodeError(message: string): Promise<void> {

@@ -19,8 +19,7 @@ test('TC_32 - Product specifications drawer', async ({ page }) => {
   });
 
   await test.step('2. Scroll to Product specifications', async () => {
-    await page.mouse.wheel(0, 1000);
-    await drawerPage.scrollToProdSpec();
+    await page.mouse.wheel(0, 1500);
   });
 
   await test.step('3. Click Product specifications', async () => {
@@ -28,8 +27,8 @@ test('TC_32 - Product specifications drawer', async ({ page }) => {
   });
 
   await test.step('4. Verify the right-side drawer heading is Product specifications', async () => {
-    await drawerPage.verifyDrawerIsOpen();
-    await drawerPage.verifyDrawerHeading();
+    await drawerPage.verifyProdSpecIsOpen();
+    await drawerPage.verifyProdSpecHeading();
   });
 
   await test.step('5. Close the drawer using X', async () => {
