@@ -1,7 +1,7 @@
 import { expect, Page } from '@playwright/test';
 import { ProductCardLocators } from '../ui-store/productCard.locators';
 import { SearchResultsLocators } from '../ui-store/searchResults.locators';
-import { logger } from '../utils/Logger';
+import { logger } from '../utils/logger';
 import { BasePage } from './basePage';
 
 export class SearchResultsPage extends BasePage {
