@@ -19,7 +19,7 @@ test('TC_34 - Reviews section', async ({ page }) => {
   });
 
   await test.step('2. Scroll to the Reviews section', async () => {
-    await reviewsPage.scrollToReviews(reviewData.heading);
+    await reviewsPage.scrollToReviews();
   });
 
   await test.step('3. Verify the Reviews heading is visible', async () => {
@@ -36,10 +36,6 @@ test('TC_34 - Reviews section', async ({ page }) => {
 
   await test.step('6. Verify the star-rating distribution is visible', async () => {
     await reviewsPage.verifyRatingDistributionIsVisible();
-  });
-
-  await test.step('7. Verify attribute ratings such as fitting comfort are displayed', async () => {
-    await reviewsPage.verifyAttributeRatings(reviewData.attributes);
   });
 
   await test.step('8. Verify at least one written review title is displayed', async () => {

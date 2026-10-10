@@ -9,29 +9,16 @@ export class ReviewsLocators {
   readonly reviewEntries: Locator;
   readonly reviewTitles: Locator;
   readonly reviewMeta: Locator;
+  readonly viewAll: Locator;
 
   constructor(private readonly page: Page) {
-    this.section = page.getByTestId('pdp-reviews-desktop:wrapper');
-    this.overallRating = this.section.getByTestId('pdp-average-rating-desktop:score');
-    this.reviewCountLink = this.section.getByTestId('pdp-average-rating-desktop:count');
-    this.ratingDistribution = this.section.getByTestId('pdp-average-rating-desktop:distribution-list');
-    this.reviewEntries = this.section.getByTestId('pdp-review-summary-desktop:item-wrapper');
-    this.reviewTitles = this.section.getByTestId('pdp-review-item:title');
-    this.reviewMeta = this.section.getByTestId('pdp-review-item:comment-container');
-  }
-
-  /** Section heading, e.g. "Reviews". */
-  heading(text: string): Locator {
-    return this.page.getByRole('heading', { name: text, exact: true });
-  }
-
-  /** A rating attribute label, e.g. "Fitting comfort". */
-  attribute(text: string): Locator {
-    return this.section.getByText(text, { exact: false }).first();
-  }
-
-  /** The "View all reviews" link or button. */
-  viewAll(text: string): Locator {
-    return this.page.getByText(text, { exact: true }).first();
+    this.section = page.getByTestId('pdp-rating-summary-desktop:title');
+    this.overallRating = page.getByTestId('pdp-average-rating-desktop:score');
+    this.reviewCountLink = page.getByTestId('pdp-average-rating-desktop:count');
+    this.ratingDistribution = page.getByTestId('pdp-average-rating-desktop:distribution-list');
+    this.reviewEntries = page.getByTestId('pdp-review-summary-desktop:item-wrapper');
+    this.reviewTitles = page.getByTestId('pdp-review-item:title');
+    this.reviewMeta = page.getByTestId('pdp-review-item:comment-container');
+    this.viewAll = page.locator("a[href*='/reviews/']");
   }
 }

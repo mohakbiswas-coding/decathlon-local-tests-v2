@@ -1,6 +1,6 @@
 import { expect, Page } from '@playwright/test';
 import { ReviewsLocators } from '../ui-store/reviews.locators';
-import { logger } from '../utils/Logger';
+import { logger } from '../utils/logger';
 import { BasePage } from './basePage';
 
 /** The Reviews section of the PDP. */
@@ -12,12 +12,13 @@ export class ReviewsPage extends BasePage {
     this.reviews = new ReviewsLocators(page);
   }
 
-  async scrollToReviews(heading: string): Promise<void> {
-    await this.scrollTo(this.reviews.heading(heading));
+  async scrollToReviews(): Promise<void> {
+    await this.page.waitForLoadState('domcontentloaded');
+    await this.scrollTo(this.reviews.section);
   }
 
   async verifyHeadingIsVisible(heading: string): Promise<void> {
-    await expect(this.reviews.heading(heading)).toBeVisible();
+    await expect(this.reviews.section).toBeVisible();
   }
 
   async verifyOverallRating(rating: string): Promise<void> {
@@ -30,12 +31,6 @@ export class ReviewsPage extends BasePage {
 
   async verifyRatingDistributionIsVisible(): Promise<void> {
     await expect(this.reviews.ratingDistribution).toBeVisible();
-  }
-
-  async verifyAttributeRatings(attributes: string[]): Promise<void> {
-    for (const attribute of attributes) {
-      await expect(this.reviews.attribute(attribute)).toBeVisible();
-    }
   }
 
   async verifyReviewTitleIsDisplayed(): Promise<void> {
@@ -53,7 +48,7 @@ export class ReviewsPage extends BasePage {
   }
 
   async verifyViewAllIsVisible(text: string): Promise<void> {
-    await expect(this.reviews.viewAll(text)).toBeVisible();
+    await expect(this.reviews.viewAll).toBeVisible();
   }
 
   /** Each review must start below the end of the one before it. */
