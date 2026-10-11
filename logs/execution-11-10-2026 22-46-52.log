@@ -1,0 +1,375 @@
+[INFO] 2026.10.11.22.46.53 Launching the home page
+[INFO] 2026.10.11.22.46.57 Home page launched successfully
+[INFO] 2026.10.11.22.46.57 Waiting for the header logo and search field
+[INFO] 2026.10.11.22.46.57 Header logo and search field are visible
+[INFO] 2026.10.11.22.46.57 Opening the search field
+[INFO] 2026.10.11.22.46.59 Search field opened successfully
+[INFO] 2026.10.11.22.46.59 Verifying that the background page remains visible
+[INFO] 2026.10.11.22.46.59 Background page remains visible
+[INFO] 2026.10.11.22.46.59 Verifying that the search overlay is open
+[INFO] 2026.10.11.22.46.59 Search overlay is open
+[INFO] 2026.10.11.22.46.59 Verifying that the search input is visible
+[INFO] 2026.10.11.22.46.59 Search input is visible
+[INFO] 2026.10.11.22.46.59 Verifying the trending searches if available
+[INFO] 2026.10.11.22.46.59 Trending searches is displayed
+[INFO] 2026.10.11.22.46.59 Trending searches check completed successfully
+[INFO] 2026.10.11.22.46.59 Verifying the Recommended For You section if available
+[INFO] 2026.10.11.22.46.59 Recommended For You is not displayed (not available / not applicable)
+[INFO] 2026.10.11.22.46.59 Recommended For You section check completed successfully
+[INFO] 2026.10.11.22.46.59 Verifying the Bestsellers section if available
+[INFO] 2026.10.11.22.46.59 Bestsellers is not displayed (not available / not applicable)
+[INFO] 2026.10.11.22.46.59 Bestsellers section check completed successfully
+[INFO] 2026.10.11.22.46.59 Verifying that the close control is visible
+[INFO] 2026.10.11.22.46.59 Close control is visible
+[INFO] 2026.10.11.22.46.59 Closing the search overlay
+[INFO] 2026.10.11.22.46.59 Search overlay closed successfully
+[INFO] 2026.10.11.22.46.59 Verifying that the search overlay is closed
+[INFO] 2026.10.11.22.46.59 Search overlay is closed
+[INFO] 2026.10.11.22.46.59 Launching the home page
+[INFO] 2026.10.11.22.47.02 Home page launched successfully
+[INFO] 2026.10.11.22.47.02 Opening the search field
+[INFO] 2026.10.11.22.47.05 Search field opened successfully
+[INFO] 2026.10.11.22.47.05 Verifying that the search overlay is open
+[INFO] 2026.10.11.22.47.05 Search overlay is open
+[INFO] 2026.10.11.22.47.05 Clicking the trending term Rain coats
+[INFO] 2026.10.11.22.47.06 Trending term clicked successfully
+[INFO] 2026.10.11.22.47.06 Waiting for the search results
+[INFO] 2026.10.11.22.47.06 Search results are visible
+[INFO] 2026.10.11.22.47.06 Verifying that the URL contains query
+[INFO] 2026.10.11.22.47.06 URL query verified successfully
+[INFO] 2026.10.11.22.47.06 Verifying that the product card is visible
+[INFO] 2026.10.11.22.47.06 Product card is visible
+[INFO] 2026.10.11.22.47.06 Verifying that the page is not blocked
+[INFO] 2026.10.11.22.47.06 Page is not blocked
+[INFO] 2026.10.11.22.47.06 Launching the home page
+[INFO] 2026.10.11.22.47.09 Home page launched successfully
+[INFO] 2026.10.11.22.47.09 Opening the search field
+[INFO] 2026.10.11.22.47.11 Search field opened successfully
+[INFO] 2026.10.11.22.47.11 Verifying that the search overlay is open
+[INFO] 2026.10.11.22.47.11 Search overlay is open
+[INFO] 2026.10.11.22.47.11 Entering the keyword Cy
+[INFO] 2026.10.11.22.47.11 Keyword entered successfully
+[INFO] 2026.10.11.22.47.11 Verifying that the search input has the value Cy
+[INFO] 2026.10.11.22.47.11 Search input value verified successfully
+[INFO] 2026.10.11.22.47.11 Verifying that the clear button is visible
+[INFO] 2026.10.11.22.47.11 Clear button is visible
+[INFO] 2026.10.11.22.47.11 Verifying the trending searches if available
+[INFO] 2026.10.11.22.47.11 Trending searches is displayed
+[INFO] 2026.10.11.22.47.11 Trending searches check completed successfully
+[INFO] 2026.10.11.22.47.11 Submitting the search
+[INFO] 2026.10.11.22.47.12 Search submitted successfully
+[INFO] 2026.10.11.22.47.12 Waiting for the search results
+[INFO] 2026.10.11.22.47.12 Search results are visible
+[INFO] 2026.10.11.22.47.12 Verifying that the URL contains query
+[INFO] 2026.10.11.22.47.12 URL query verified successfully
+[INFO] 2026.10.11.22.47.12 Verifying that the product card is visible
+[INFO] 2026.10.11.22.47.12 Product card is visible
+[INFO] 2026.10.11.22.47.12 Opening the results page for the keyword Shoes for men
+[INFO] 2026.10.11.22.47.16 Results page opened successfully
+[INFO] 2026.10.11.22.47.16 Waiting for the search results
+[INFO] 2026.10.11.22.47.16 Search results are visible
+[INFO] 2026.10.11.22.47.16 Verifying the info of product card 1
+[INFO] 2026.10.11.22.47.16 Card 1 MRP is displayed
+[INFO] 2026.10.11.22.47.16 Card 1 rating is displayed
+[INFO] 2026.10.11.22.47.16 Card 1 discount is not displayed (not available / not applicable)
+[INFO] 2026.10.11.22.47.16 Product card 1 info verified successfully
+[INFO] 2026.10.11.22.47.16 Verifying the info of product card 2
+[INFO] 2026.10.11.22.47.16 Card 2 MRP is displayed
+[INFO] 2026.10.11.22.47.16 Card 2 rating is displayed
+[INFO] 2026.10.11.22.47.16 Card 2 discount is not displayed (not available / not applicable)
+[INFO] 2026.10.11.22.47.16 Product card 2 info verified successfully
+[INFO] 2026.10.11.22.47.16 Launching the home page
+[INFO] 2026.10.11.22.47.19 Home page launched successfully
+[INFO] 2026.10.11.22.47.19 Opening the search field
+[INFO] 2026.10.11.22.47.22 Search field opened successfully
+[INFO] 2026.10.11.22.47.22 Clearing the search text
+[INFO] 2026.10.11.22.47.22 Search text cleared successfully
+[INFO] 2026.10.11.22.47.22 Entering the keyword mklfmsmclkfjskhlkhjs8989898978
+[INFO] 2026.10.11.22.47.22 Keyword entered successfully
+[INFO] 2026.10.11.22.47.22 Submitting the search
+[INFO] 2026.10.11.22.47.22 Search submitted successfully
+[INFO] 2026.10.11.22.47.22 Verifying that the URL contains mklfmsmclkfjskhlkhjs8989898978
+[INFO] 2026.10.11.22.47.22 URL query verified successfully
+[INFO] 2026.10.11.22.47.23 Logging the result summary
+[INFO] 2026.10.11.22.47.23 Product cards displayed: 0
+[INFO] 2026.10.11.22.47.23 Result summary logged successfully
+[INFO] 2026.10.11.22.47.23 Opening the results page for the keyword Shoes for men
+[INFO] 2026.10.11.22.47.26 Results page opened successfully
+[INFO] 2026.10.11.22.47.26 Waiting for the search results
+[INFO] 2026.10.11.22.47.27 Search results are visible
+[INFO] 2026.10.11.22.47.27 Opening the product from card 1
+[INFO] 2026.10.11.22.47.27 Product opened successfully
+[INFO] 2026.10.11.22.47.27 Verifying that the URL has the product path /p/
+[INFO] 2026.10.11.22.47.27 Product path in the URL verified successfully
+[INFO] 2026.10.11.22.47.27 Verifying that the brand and name are visible
+[INFO] 2026.10.11.22.47.27 Brand and name are visible
+[INFO] 2026.10.11.22.47.27 Verifying that the product name matches DECATHLON Men Running Superior Grip Cushion Shoes, Jogflow 100 - Black
+[INFO] 2026.10.11.22.47.27 Product name matches successfully
+[INFO] 2026.10.11.22.47.27 Verifying that the price and main image are visible
+[INFO] 2026.10.11.22.47.27 Price and main image are visible
+[INFO] 2026.10.11.22.47.28 Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white
+[INFO] 2026.10.11.22.47.31 Product page opened successfully
+[INFO] 2026.10.11.22.47.31 Waiting for the product to load
+[INFO] 2026.10.11.22.47.31 Product loaded successfully
+[INFO] 2026.10.11.22.47.31 Verifying the breadcrumbs
+[INFO] 2026.10.11.22.47.31 Breadcrumbs verified successfully
+[INFO] 2026.10.11.22.47.31 Verifying the product brand contains KIPRUN
+[INFO] 2026.10.11.22.47.31 Product brand verified successfully
+[INFO] 2026.10.11.22.47.31 Verifying the product name contains Kiprun Kipcore black and white
+[INFO] 2026.10.11.22.47.31 Product name verified successfully
+[INFO] 2026.10.11.22.47.31 Verifying the product ID contains 8873071
+[INFO] 2026.10.11.22.47.31 Product ID verified successfully
+[INFO] 2026.10.11.22.47.31 Verifying that the MRP is visible
+[INFO] 2026.10.11.22.47.31 MRP is visible
+[INFO] 2026.10.11.22.47.31 Verifying that the rating and review link are visible
+[INFO] 2026.10.11.22.47.31 Rating and review link are visible
+[INFO] 2026.10.11.22.47.31 Verifying that at least 1 colour options are visible
+[INFO] 2026.10.11.22.47.31 Colour options are visible
+[INFO] 2026.10.11.22.47.31 Verifying that the size options and add to cart are visible
+[INFO] 2026.10.11.22.47.34 Size options and add to cart are visible
+[INFO] 2026.10.11.22.47.35 Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white
+[INFO] 2026.10.11.22.47.38 Product page opened successfully
+[INFO] 2026.10.11.22.47.38 Verifying that at least 1 colour options are visible
+[INFO] 2026.10.11.22.47.38 Colour options are visible
+[INFO] 2026.10.11.22.47.38 Selecting the colour option at index 1
+[INFO] 2026.10.11.22.47.40 Colour option selected successfully
+[INFO] 2026.10.11.22.47.40 Verifying that the main image has changed
+[INFO] 2026.10.11.22.47.40 Main image changed successfully
+[INFO] 2026.10.11.22.47.40 Colour is a separate variant. URL changed: https://www.decathlon.in/p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white -> https://www.decathlon.in/p/8873070/men-s-running-shoes-kiprun-kipcore-grey
+[INFO] 2026.10.11.22.47.40 Verifying that the price and size controls are visible
+[INFO] 2026.10.11.22.47.41 Price and size controls are visible
+[INFO] 2026.10.11.22.47.41 Verifying that the application error message is hidden
+[INFO] 2026.10.11.22.47.41 Application error message is hidden
+[INFO] 2026.10.11.22.47.41 Verifying that the page not found message is hidden
+[INFO] 2026.10.11.22.47.41 Page not found message is hidden
+[INFO] 2026.10.11.22.47.41 Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white
+[INFO] 2026.10.11.22.47.45 Product page opened successfully
+[INFO] 2026.10.11.22.47.45 Clicking the add to cart button
+[INFO] 2026.10.11.22.47.48 Add to cart button clicked successfully
+[INFO] 2026.10.11.22.47.48 Verifying that the size error is visible: Please select a size
+[INFO] 2026.10.11.22.47.48 Size error is visible
+[INFO] 2026.10.11.22.47.48 Screenshot captured: TC_28 size error message
+[INFO] 2026.10.11.22.47.48 Verifying that the size options remain available
+[INFO] 2026.10.11.22.47.48 Size options remain available
+[INFO] 2026.10.11.22.47.48 Verifying that no size is selected
+[INFO] 2026.10.11.22.47.48 No size is selected
+[INFO] 2026.10.11.22.47.48 Verifying that the cart count is 0
+[INFO] 2026.10.11.22.47.48 Cart count verified successfully
+[INFO] 2026.10.11.22.47.48 Verifying that the user is still on /p/
+[INFO] 2026.10.11.22.47.48 User is still on the product page
+[INFO] 2026.10.11.22.47.49 Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white
+[INFO] 2026.10.11.22.47.52 Product page opened successfully
+[INFO] 2026.10.11.22.47.52 Verifying that the size options and add to cart are visible
+[INFO] 2026.10.11.22.47.55 Size options and add to cart are visible
+[INFO] 2026.10.11.22.47.55 Selecting the size 6.5
+[INFO] 2026.10.11.22.47.55 Size selected successfully
+[INFO] 2026.10.11.22.47.55 Verifying the low-stock label 3 left if available
+[INFO] 2026.10.11.22.47.55 Low-stock label is not displayed (not applicable for this size)
+[INFO] 2026.10.11.22.47.55 Clicking the add to cart button
+[INFO] 2026.10.11.22.47.56 Add to cart button clicked successfully
+[INFO] 2026.10.11.22.47.56 Verifying the cart button text matches Go to cart
+[INFO] 2026.10.11.22.47.57 Cart button text verified successfully
+[INFO] 2026.10.11.22.47.57 Verifying that the cart count is 1
+[INFO] 2026.10.11.22.47.57 Cart count verified successfully
+[INFO] 2026.10.11.22.47.57 Verifying that the size error is hidden: Please select a size
+[INFO] 2026.10.11.22.47.57 Size error is hidden
+[INFO] 2026.10.11.22.47.58 Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white
+[INFO] 2026.10.11.22.48.01 Product page opened successfully
+[INFO] 2026.10.11.22.48.01 Waiting for the product to load
+[INFO] 2026.10.11.22.48.01 Product loaded successfully
+[INFO] 2026.10.11.22.48.01 Selecting the size 6.5
+[INFO] 2026.10.11.22.48.04 Size selected successfully
+[INFO] 2026.10.11.22.48.04 Clicking the add to cart button
+[INFO] 2026.10.11.22.48.05 Add to cart button clicked successfully
+[INFO] 2026.10.11.22.48.05 Verifying the cart button text matches Go to cart
+[INFO] 2026.10.11.22.48.06 Cart button text verified successfully
+[INFO] 2026.10.11.22.48.06 Closing the add to cart confirmation
+[INFO] 2026.10.11.22.48.07 Add to cart confirmation closed successfully
+[INFO] 2026.10.11.22.48.07 Going to the cart
+[INFO] 2026.10.11.22.48.07 Navigated to the cart successfully
+[INFO] 2026.10.11.22.48.07 Waiting for the cart items to be visible
+[INFO] 2026.10.11.22.48.10 Cart items are visible
+[INFO] 2026.10.11.22.48.10 Verifying the cart item count is 1
+[INFO] 2026.10.11.22.48.10 Cart item count verified successfully
+[INFO] 2026.10.11.22.48.10 Verifying the cart item brand contains KIPRUN
+[INFO] 2026.10.11.22.48.10 Cart item brand verified successfully
+[INFO] 2026.10.11.22.48.10 Verifying that the cart item image is visible
+[INFO] 2026.10.11.22.48.10 Cart item image is visible
+[INFO] 2026.10.11.22.48.10 Verifying the cart item name contains Kiprun Kipcore black and white
+[INFO] 2026.10.11.22.48.10 Cart item name verified successfully
+[INFO] 2026.10.11.22.48.10 Verifying the cart item size contains 6.5
+[INFO] 2026.10.11.22.48.10 Cart item size verified successfully
+[INFO] 2026.10.11.22.48.10 Verifying the cart item quantity contains 1
+[INFO] 2026.10.11.22.48.10 Cart item quantity verified successfully
+[INFO] 2026.10.11.22.48.10 Verifying the selling price 4999
+[INFO] 2026.10.11.22.48.10 Selling price verified successfully
+[INFO] 2026.10.11.22.48.10 Verifying the MRP 6499
+[INFO] 2026.10.11.22.48.10 MRP verified successfully
+[INFO] 2026.10.11.22.48.10 Verifying the summary discount 1500
+[INFO] 2026.10.11.22.48.10 Summary discount verified successfully
+[INFO] 2026.10.11.22.48.10 Verifying the summary total 4999
+[INFO] 2026.10.11.22.48.10 Summary total verified successfully
+[INFO] 2026.10.11.22.48.10 Verifying that the guest checkout action is visible
+[INFO] 2026.10.11.22.48.10 Guest checkout action is visible
+[INFO] 2026.10.11.22.48.11 Screenshot captured: TC_30 cart summary
+[INFO] 2026.10.11.22.48.11 Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white
+[INFO] 2026.10.11.22.48.15 Product page opened successfully
+[INFO] 2026.10.11.22.48.15 Verifying that the product details trigger is visible
+[INFO] 2026.10.11.22.48.17 Product details trigger is visible
+[INFO] 2026.10.11.22.48.17 Opening the product details drawer
+[INFO] 2026.10.11.22.48.17 Product details drawer opened successfully
+[INFO] 2026.10.11.22.48.17 Verifying that the product details drawer is open
+[INFO] 2026.10.11.22.48.17 Product details drawer is open
+[INFO] 2026.10.11.22.48.17 Verifying that the product details heading is visible
+[INFO] 2026.10.11.22.48.17 Product details heading is visible
+[INFO] 2026.10.11.22.48.17 Verifying that the drawer contains the text ID: 8873071
+[INFO] 2026.10.11.22.48.17 Drawer text verified successfully
+[INFO] 2026.10.11.22.48.17 Verifying that the drawer close button is visible
+[INFO] 2026.10.11.22.48.17 Drawer close button is visible
+[INFO] 2026.10.11.22.48.17 Closing the drawer
+[INFO] 2026.10.11.22.48.18 Drawer closed successfully
+[INFO] 2026.10.11.22.48.18 Verifying that the product details drawer is closed
+[INFO] 2026.10.11.22.48.18 Product details drawer is closed
+[INFO] 2026.10.11.22.48.19 Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white
+[INFO] 2026.10.11.22.48.22 Product page opened successfully
+[INFO] 2026.10.11.22.48.22 Waiting for the product to load
+[INFO] 2026.10.11.22.48.22 Product loaded successfully
+[INFO] 2026.10.11.22.48.22 Opening the product specifications drawer
+[INFO] 2026.10.11.22.48.24 Product specifications drawer opened successfully
+[INFO] 2026.10.11.22.48.24 Verifying that the product specifications drawer is open
+[INFO] 2026.10.11.22.48.24 Product specifications drawer is open
+[INFO] 2026.10.11.22.48.24 Verifying that the product specifications heading is visible
+[INFO] 2026.10.11.22.48.24 Product specifications heading is visible
+[INFO] 2026.10.11.22.48.24 Closing the drawer
+[INFO] 2026.10.11.22.48.24 Drawer closed successfully
+[INFO] 2026.10.11.22.48.24 Verifying that the product details drawer is closed
+[INFO] 2026.10.11.22.48.24 Product details drawer is closed
+[INFO] 2026.10.11.22.48.25 Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white
+[INFO] 2026.10.11.22.48.29 Product page opened successfully
+[INFO] 2026.10.11.22.48.29 Waiting for the product to load
+[INFO] 2026.10.11.22.48.29 Product loaded successfully
+[INFO] 2026.10.11.22.48.29 Verifying that the delivery heading is visible
+[INFO] 2026.10.11.22.48.29 Delivery heading is visible
+[INFO] 2026.10.11.22.48.29 Opening the delivery location drawer
+[INFO] 2026.10.11.22.48.31 Delivery location drawer opened successfully
+[INFO] 2026.10.11.22.48.31 Verifying that the delivery location drawer is open
+[INFO] 2026.10.11.22.48.31 Delivery location drawer is open
+[INFO] 2026.10.11.22.48.31 Verifying that the guest login message is visible
+[INFO] 2026.10.11.22.48.31 Guest login message is visible
+[INFO] 2026.10.11.22.48.31 Entering the pincode 723000
+[INFO] 2026.10.11.22.48.31 Pincode entered successfully
+[INFO] 2026.10.11.22.48.31 Submitting the pincode
+[INFO] 2026.10.11.22.48.31 Pincode submitted successfully
+[INFO] 2026.10.11.22.48.31 Verifying the pincode error: Unable to find location for this pincode
+[INFO] 2026.10.11.22.48.32 Pincode error is visible
+[INFO] 2026.10.11.22.48.32 Screenshot captured: TC_33 invalid pincode error
+[INFO] 2026.10.11.22.48.32 Closing the delivery location drawer
+[INFO] 2026.10.11.22.48.32 Delivery location drawer closed successfully
+[INFO] 2026.10.11.22.48.32 Verifying that the product details drawer is closed
+[INFO] 2026.10.11.22.48.32 Product details drawer is closed
+[INFO] 2026.10.11.22.48.33 Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white
+[INFO] 2026.10.11.22.48.36 Product page opened successfully
+[INFO] 2026.10.11.22.48.36 Waiting for the product to load
+[INFO] 2026.10.11.22.48.36 Product loaded successfully
+[INFO] 2026.10.11.22.48.36 Scrolling to the reviews section
+[INFO] 2026.10.11.22.48.38 Scrolled to the reviews section successfully
+[INFO] 2026.10.11.22.48.38 Verifying that the reviews heading is visible: Reviews
+[INFO] 2026.10.11.22.48.38 Reviews heading is visible
+[INFO] 2026.10.11.22.48.38 Verifying the overall rating contains 4.7
+[INFO] 2026.10.11.22.48.38 Overall rating verified successfully
+[INFO] 2026.10.11.22.48.38 Verifying that the review count link is visible
+[INFO] 2026.10.11.22.48.38 Review count link is visible
+[INFO] 2026.10.11.22.48.38 Verifying that the rating distribution is visible
+[INFO] 2026.10.11.22.48.38 Rating distribution is visible
+[INFO] 2026.10.11.22.48.38 Verifying that the review title is displayed
+[INFO] 2026.10.11.22.48.38 Review title is displayed
+[INFO] 2026.10.11.22.48.38 Verifying the review metadata if available
+[INFO] 2026.10.11.22.48.38 Review metadata is displayed
+[INFO] 2026.10.11.22.48.38 Review metadata check completed successfully
+[INFO] 2026.10.11.22.48.38 Verifying that at least 2 reviews are displayed
+[INFO] 2026.10.11.22.48.39 Multiple reviews are displayed
+[INFO] 2026.10.11.22.48.39 Verifying that the view all link is visible: View all reviews
+[INFO] 2026.10.11.22.48.39 View all link is visible
+[INFO] 2026.10.11.22.48.39 Verifying that 2 reviews do not overlap
+[INFO] 2026.10.11.22.48.39 2 review entries checked for overlap
+[INFO] 2026.10.11.22.48.39 Launching the home page
+[INFO] 2026.10.11.22.48.43 Home page launched successfully
+[INFO] 2026.10.11.22.48.43 Waiting for the header logo and search field
+[INFO] 2026.10.11.22.48.43 Header logo and search field are visible
+[INFO] 2026.10.11.22.48.43 Opening the search field
+[INFO] 2026.10.11.22.48.46 Search field opened successfully
+[INFO] 2026.10.11.22.48.46 Verifying that the search overlay is open
+[INFO] 2026.10.11.22.48.46 Search overlay is open
+[INFO] 2026.10.11.22.48.46 Verifying that the search input is visible
+[INFO] 2026.10.11.22.48.46 Search input is visible
+[INFO] 2026.10.11.22.48.46 Entering the keyword Kiprun Kipcore
+[INFO] 2026.10.11.22.48.46 Keyword entered successfully
+[INFO] 2026.10.11.22.48.46 Verifying that the search input has the value Kiprun Kipcore
+[INFO] 2026.10.11.22.48.46 Search input value verified successfully
+[INFO] 2026.10.11.22.48.46 Submitting the search
+[INFO] 2026.10.11.22.48.46 Search submitted successfully
+[INFO] 2026.10.11.22.48.46 Waiting for the search results
+[INFO] 2026.10.11.22.48.46 Search results are visible
+[INFO] 2026.10.11.22.48.46 Verifying that the URL contains query
+[INFO] 2026.10.11.22.48.46 URL query verified successfully
+[INFO] 2026.10.11.22.48.46 Opening the product matching the name Kiprun Kipcore
+[INFO] 2026.10.11.22.48.47 Product opened successfully: KIPRUN Men's running shoes, Kiprun Kipcore black and white
+[INFO] 2026.10.11.22.48.47 Waiting for the product to load
+[INFO] 2026.10.11.22.48.47 Product loaded successfully
+[INFO] 2026.10.11.22.48.47 Verifying that the URL has the product path /p/
+[INFO] 2026.10.11.22.48.47 Product path in the URL verified successfully
+[INFO] 2026.10.11.22.48.47 Verifying the product brand contains KIPRUN
+[INFO] 2026.10.11.22.48.47 Product brand verified successfully
+[INFO] 2026.10.11.22.48.47 Verifying the product name contains Kiprun Kipcore black and white
+[INFO] 2026.10.11.22.48.47 Product name verified successfully
+[INFO] 2026.10.11.22.48.47 Verifying the product ID contains 8873071
+[INFO] 2026.10.11.22.48.47 Product ID verified successfully
+[INFO] 2026.10.11.22.48.47 Verifying that the price and main image are visible
+[INFO] 2026.10.11.22.48.48 Price and main image are visible
+[INFO] 2026.10.11.22.48.48 Verifying that the size options and add to cart are visible
+[INFO] 2026.10.11.22.48.48 Size options and add to cart are visible
+[INFO] 2026.10.11.22.48.48 Selecting the size 6.5
+[INFO] 2026.10.11.22.48.48 Size selected successfully
+[INFO] 2026.10.11.22.48.48 Verifying the low-stock label 3 left if available
+[INFO] 2026.10.11.22.48.48 Low-stock label is not displayed (not applicable for this size)
+[INFO] 2026.10.11.22.48.48 Clicking the add to cart button
+[INFO] 2026.10.11.22.48.49 Add to cart button clicked successfully
+[INFO] 2026.10.11.22.48.49 Verifying the cart button text matches Go to cart
+[INFO] 2026.10.11.22.48.50 Cart button text verified successfully
+[INFO] 2026.10.11.22.48.50 Verifying that the cart count is 1
+[INFO] 2026.10.11.22.48.50 Cart count verified successfully
+[INFO] 2026.10.11.22.48.50 Verifying that the size error is hidden: Please select a size
+[INFO] 2026.10.11.22.48.50 Size error is hidden
+[INFO] 2026.10.11.22.48.50 Closing the add to cart confirmation
+[INFO] 2026.10.11.22.48.50 Add to cart confirmation closed successfully
+[INFO] 2026.10.11.22.48.50 Going to the cart
+[INFO] 2026.10.11.22.48.51 Navigated to the cart successfully
+[INFO] 2026.10.11.22.48.51 Waiting for the cart items to be visible
+[INFO] 2026.10.11.22.48.53 Cart items are visible
+[INFO] 2026.10.11.22.48.53 Verifying the cart item count is 1
+[INFO] 2026.10.11.22.48.53 Cart item count verified successfully
+[INFO] 2026.10.11.22.48.53 Verifying the cart item brand contains KIPRUN
+[INFO] 2026.10.11.22.48.53 Cart item brand verified successfully
+[INFO] 2026.10.11.22.48.53 Verifying the cart item name contains Kiprun Kipcore black and white
+[INFO] 2026.10.11.22.48.53 Cart item name verified successfully
+[INFO] 2026.10.11.22.48.53 Verifying that the cart item image is visible
+[INFO] 2026.10.11.22.48.53 Cart item image is visible
+[INFO] 2026.10.11.22.48.53 Verifying the cart item size contains 6.5
+[INFO] 2026.10.11.22.48.53 Cart item size verified successfully
+[INFO] 2026.10.11.22.48.53 Verifying the cart item quantity contains 1
+[INFO] 2026.10.11.22.48.53 Cart item quantity verified successfully
+[INFO] 2026.10.11.22.48.53 Verifying the selling price 4999
+[INFO] 2026.10.11.22.48.53 Selling price verified successfully
+[INFO] 2026.10.11.22.48.53 Verifying the MRP 6499
+[INFO] 2026.10.11.22.48.53 MRP verified successfully
+[INFO] 2026.10.11.22.48.53 Verifying the summary discount 1500
+[INFO] 2026.10.11.22.48.54 Summary discount verified successfully
+[INFO] 2026.10.11.22.48.54 Verifying the summary total 4999
+[INFO] 2026.10.11.22.48.54 Summary total verified successfully
+[INFO] 2026.10.11.22.48.54 Verifying that the guest checkout action is visible
+[INFO] 2026.10.11.22.48.54 Guest checkout action is visible
+[INFO] 2026.10.11.22.48.54 Screenshot captured: TC_35 end-to-end cart summary
+[INFO] 2026.10.11.22.48.54 Clicking the guest checkout action
+[INFO] 2026.10.11.22.48.57 Guest checkout action clicked successfully
+[INFO] 2026.10.11.22.48.57 Verifying that the login gate is displayed
+[INFO] 2026.10.11.22.48.57 Login gate is displayed
