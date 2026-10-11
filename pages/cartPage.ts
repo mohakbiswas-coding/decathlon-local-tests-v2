@@ -1,6 +1,6 @@
-import { expect, Locator, Page } from '@playwright/test';
-import { CartLocators } from '../ui-store/cart.locators';
-import { BasePage } from './basePage';
+import { expect, Locator, Page } from "@playwright/test";
+import { CartLocators } from "../ui-store/cart.locators";
+import { BasePage } from "./basePage";
 
 /** Cart Items page. */
 export class CartPage extends BasePage {
@@ -20,7 +20,9 @@ export class CartPage extends BasePage {
   }
 
   async verifyItemBrand(brand: string): Promise<void> {
-    await expect(this.cart.items.first()).toContainText(brand, { ignoreCase: true });
+    await expect(this.cart.items.first()).toContainText(brand, {
+      ignoreCase: true,
+    });
   }
 
   async verifyItemImageIsVisible(): Promise<void> {
@@ -28,7 +30,9 @@ export class CartPage extends BasePage {
   }
 
   async verifyItemName(expectedName: string): Promise<void> {
-    await expect(this.cart.itemName).toContainText(expectedName, { ignoreCase: true });
+    await expect(this.cart.itemName).toContainText(expectedName, {
+      ignoreCase: true,
+    });
   }
 
   async verifyItemSize(size: string): Promise<void> {
@@ -60,10 +64,44 @@ export class CartPage extends BasePage {
     await expect(this.cart.loginToProceed).toBeVisible();
   }
 
+  async clickGuestCheckoutAction(): Promise<void> {
+    await this.click(this.cart.loginToProceed);
+  }
+
+  /** A guest must be taken to an authentication step before proceeding to checkout. */
+  async verifyLoginGateIsDisplayed(): Promise<void> {
+    const loginHeading = this.page
+      .getByRole("heading", { name: /log ?in|sign ?in/i })
+      .first();
+    const loginField = this.page
+      .locator(
+        'input[type="tel"], input[autocomplete="tel"], input[placeholder*="mobile" i], input[placeholder*="phone" i], input[placeholder*="email" i]',
+      )
+      .first();
+    const dialog = this.page.getByRole("dialog").first();
+
+    await expect
+      .poll(
+        async () => {
+          const url = this.page.url().toLowerCase();
+          if (/login|sign[-_]?in|auth/.test(url)) return true;
+          if (await loginHeading.isVisible().catch(() => false)) return true;
+          if (await loginField.isVisible().catch(() => false)) return true;
+          return dialog.isVisible().catch(() => false);
+        },
+        {
+          timeout: 10_000,
+          message:
+            "Expected the guest checkout action to open an authentication step.",
+        },
+      )
+      .toBe(true);
+  }
+
   /** The quantity can be plain text or an input value. */
   private async readValue(locator: Locator): Promise<string> {
     await expect(locator).toBeVisible();
-    const text = (await locator.innerText().catch(() => '')).trim();
-    return text !== '' ? text : locator.inputValue().catch(() => '');
+    const text = (await locator.innerText().catch(() => "")).trim();
+    return text !== "" ? text : locator.inputValue().catch(() => "");
   }
 }

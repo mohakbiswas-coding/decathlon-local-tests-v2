@@ -34,6 +34,7 @@ export class ProductDetailsLocators {
   /** One button that reads "Add to cart" first and "Go to cart" after adding. */
   readonly cartActionButton: Locator;
   readonly gotoCartButton: Locator;
+  readonly addToCartConfirmationClose: Locator;
 
   constructor(private readonly page: Page) {
     this.brand = page.getByTestId('pdp-product-info-desktop:brand');
@@ -41,10 +42,10 @@ export class ProductDetailsLocators {
     this.price = page.getByTestId('pdp-price-desktop:selling-price');
     this.mainImage = page.getByTestId('pdp-product-image:image').first();
     this.pageNotFound = page.getByText(/page not found/i);
-    this.applicationError = page.getByText(/something went wrong|application error/i); // verify with Inspect
+    this.applicationError = page.getByText(/something went wrong|application error/i);
 
     this.breadcrumbs = page.locator('nav[aria-label*="readcrumb" i]').or(page.getByTestId('breadcrumbs-desktop:breadcrumbs'));
-    this.productId = page.getByText(/^ID\s*:?\s*\d+/).first(); // verify with Inspect
+    this.productId = page.getByText(/^ID\s*:?\s*\d+/).first();
     this.mrp = page.getByTestId('pdp-price-desktop:mrp');
     this.ratingValue = page.getByTestId('pdp-rating-desktop:value');
     this.reviewLink = page.getByTestId('pdp-rating-desktop:review-button');
@@ -55,10 +56,11 @@ export class ProductDetailsLocators {
     this.sizeSection = page.getByTestId('pdp-size-selector-desktop:title');
     this.sizeOptions = page.locator("ul[data-test-id='pdp-size-selector-desktop:grid'] > li > button");
     this.enabledSizeOptions = this.sizeOptions.and(page.locator(':not([disabled])'));
-    this.sizeError = page.getByTestId('pdp-size-selector:error'); // verify with Inspect
-    this.lowStockLabel = page.getByTestId('pdp-size-selector:low-stock'); // verify with Inspect
-    this.cartActionButton = page.getByRole('button', { 'name' : 'Add to cart' });
+    this.sizeError = page.getByTestId('pdp-size-selector:error');
+    this.lowStockLabel = page.getByTestId('pdp-size-selector:low-stock');
+    this.cartActionButton = page.getByRole('button', { 'name': 'Add to cart' });
     this.gotoCartButton = page.getByTestId('button');
+    this.addToCartConfirmationClose = page.locator("div[aria-label='Close']");
   }
 
   /** The size button whose text is the given size, e.g. "6.5". */

@@ -1,8 +1,8 @@
-import { expect, Page } from '@playwright/test';
-import { ProductCardLocators } from '../ui-store/productCard.locators';
-import { SearchResultsLocators } from '../ui-store/searchResults.locators';
-import { logger } from '../utils/Logger';
-import { BasePage } from './basePage';
+import { expect, Page } from "@playwright/test";
+import { ProductCardLocators } from "../ui-store/productCard.locators";
+import { SearchResultsLocators } from "../ui-store/searchResults.locators";
+import { logger } from "../utils/logger";
+import { BasePage } from "./basePage";
 
 export class SearchResultsPage extends BasePage {
   readonly results: SearchResultsLocators;
@@ -45,14 +45,16 @@ export class SearchResultsPage extends BasePage {
   }
 
   async getUrlQueryValue(queryParam: string): Promise<string> {
-    return new URL(this.page.url()).searchParams.get(queryParam) ?? '';
+    return new URL(this.page.url()).searchParams.get(queryParam) ?? "";
   }
 
   async logResultSummary(namesToInspect = 3): Promise<void> {
     const count = await this.results.productCards.count();
     logger.info(`Product cards displayed: ${count}`);
     for (let i = 0; i < Math.min(count, namesToInspect); i++) {
-      logger.info(`Result ${i + 1}: ${(await this.card(i).name.innerText()).trim()}`);
+      logger.info(
+        `Result ${i + 1}: ${(await this.card(i).name.innerText()).trim()}`,
+      );
     }
   }
 
@@ -78,5 +80,51 @@ export class SearchResultsPage extends BasePage {
 
   async openProductFromCard(index: number): Promise<void> {
     await this.click(this.card(index).name);
+  }
+
+  /**
+   * Opens a matching result by its visible title and, when supplied, its href.
+   * The href constraint lets an end-to-end test select a specific variant when
+   * several cards share the same base product name.
+   */
+  async openProductByName(
+    nameFragment: string,
+    expectedHrefFragment?: string,
+  ): Promise<string> {
+    const normalizedTerms = nameFragment
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, " ")
+      .split(/\s+/)
+      .filter((term) => term.length > 0 && term !== "and");
+    const count = await this.results.productCards.count();
+    const inspected: string[] = [];
+
+    for (let index = 0; index < count; index++) {
+      const card = this.card(index);
+      const cardName = (await card.name.innerText()).trim();
+      const normalizedCardName = cardName
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, " ");
+      const href =
+        (await this.results.productCards.nth(index).getAttribute("href")) ?? "";
+      inspected.push(`${cardName} (${href || "no href"})`);
+
+      const nameMatches = normalizedTerms.every((term) =>
+        normalizedCardName.includes(term),
+      );
+      const hrefMatches =
+        !expectedHrefFragment || href.includes(expectedHrefFragment);
+
+      if (nameMatches && hrefMatches) {
+        await this.click(card.name);
+        return cardName;
+      }
+    }
+
+    throw new Error(
+      `Could not find product card matching name "${nameFragment}"` +
+        (expectedHrefFragment ? ` and href "${expectedHrefFragment}"` : "") +
+        `. Cards inspected: ${inspected.join("; ")}`,
+    );
   }
 }
