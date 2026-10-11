@@ -1,38 +1,58 @@
-import { test } from '@playwright/test';
-import productData from '../test-data/product.json';
-import { DrawerPage } from '../pages/drawerPage';
-import { ProductPage } from '../pages/productPage';
-import { takeErrorScreenshot } from '../utils/ScreenshotUtil';
+import { test, type BrowserContext, type Page } from "@playwright/test";
+import productData from "../test-data/product.json";
+import { DrawerPage } from "../pages/drawerPage";
+import { ProductPage } from "../pages/productPage";
+import { takeErrorScreenshot } from "../utils/ScreenshotUtil";
 
-test.afterEach(async ({ page }, testInfo) => {
-  if (testInfo.status !== testInfo.expectedStatus) await takeErrorScreenshot(page, testInfo.title);
-});
+test.describe("Decathlon India - Product specifications drawer", () => {
+  let context: BrowserContext;
+  let page: Page;
+  let productPage: ProductPage;
+  let drawerPage: DrawerPage;
 
-test('TC_32 - Product specifications drawer', async ({ page }) => {
-  const productPage = new ProductPage(page);
-  const drawerPage = new DrawerPage(page);
-  const specs = productData.drawers.specifications;
+  test.describe.configure({ mode: "serial" });
 
-  await test.step('1. Open the Product Details Page', async () => {
-    await productPage.openProduct(productData.urls.pdp);
-    await productPage.waitForProductToLoad();
+  test.beforeAll(async ({ browser }) => {
+    context = await browser.newContext();
+    page = await context.newPage();
+    productPage = new ProductPage(page);
+    drawerPage = new DrawerPage(page);
   });
 
-  await test.step('2. Scroll to Product specifications', async () => {
-    await page.mouse.wheel(0, 1500);
+  test.afterAll(async () => {
+    await context.close();
   });
 
-  await test.step('3. Click Product specifications', async () => {
-    await drawerPage.openProdSpecDrawer();
+  test.afterEach(async ({page}, testInfo) => {
+    if (testInfo.status !== testInfo.expectedStatus) {
+      await takeErrorScreenshot(page, testInfo.title);
+    }
   });
 
-  await test.step('4. Verify the right-side drawer heading is Product specifications', async () => {
-    await drawerPage.verifyProdSpecIsOpen();
-    await drawerPage.verifyProdSpecHeading();
-  });
+  test('TC_32 - Product specifications drawer', async () => {
+    const specs = productData.drawers.specifications;
 
-  await test.step('5. Close the drawer using X', async () => {
-    await drawerPage.closeDrawer();
-    await drawerPage.verifyDrawerIsClosed();
+    await test.step('1. Open the Product Details Page', async () => {
+      await productPage.openProduct(productData.urls.pdp);
+      await productPage.waitForProductToLoad();
+    });
+
+    await test.step('2. Scroll to Product specifications', async () => {
+      await page.mouse.wheel(0, 1500);
+    });
+
+    await test.step('3. Click Product specifications', async () => {
+      await drawerPage.openProdSpecDrawer();
+    });
+
+    await test.step('4. Verify the right-side drawer heading is Product specifications', async () => {
+      await drawerPage.verifyProdSpecIsOpen();
+      await drawerPage.verifyProdSpecHeading();
+    });
+
+    await test.step('5. Close the drawer using X', async () => {
+      await drawerPage.closeDrawer();
+      await drawerPage.verifyDrawerIsClosed();
+    });
   });
 });
