@@ -43,7 +43,7 @@ test.describe("Decathlon India - Cart item verification", () => {
     });
 
     await test.step('1. Click Go to cart', async () => {
-      await page.locator("div[aria-label='Close']").click();
+      await productPage.closeAddToCartConfirmationIfVisible();
       await productPage.goToCart();
     });
 

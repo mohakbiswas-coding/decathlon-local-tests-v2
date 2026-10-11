@@ -213,10 +213,7 @@ export class ProductPage extends BasePage {
   }
 
   async closeAddToCartConfirmationIfVisible(): Promise<void> {
-    const closeControl = this.product.addToCartConfirmationClose.first();
-    if (await this.isVisible(closeControl)) {
-      await this.click(closeControl);
-    }
+    await this.click(this.product.addToCartConfirmationClose);
   }
 
   async goToCart(): Promise<void> {
