@@ -93,6 +93,7 @@ test('TC_35 - End-to-end product purchase flow (guest checkout)', async ({ page 
 
   await test.step('12. Open the Cart page', async () => {
     await productPage.closeAddToCartConfirmationIfVisible();
+    await page.locator("div[aria-label='Close']").click();
     await productPage.goToCart();
     await cartPage.waitForCart();
   });
