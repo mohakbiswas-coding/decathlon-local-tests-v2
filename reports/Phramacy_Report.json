@@ -1,0 +1,451 @@
+{
+  "total": 89,
+  "entries": [
+    {
+      "step": "Verifying that the URL has the product path /p/",
+      "status": "passed",
+      "at": "2026.10.12.17.17.54"
+    },
+    {
+      "step": "Product path in the URL verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.17.54"
+    },
+    {
+      "step": "Verifying that the brand and name are visible",
+      "status": "passed",
+      "at": "2026.10.12.17.17.54"
+    },
+    {
+      "step": "Brand and name visibility verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.17.54"
+    },
+    {
+      "step": "Verifying that the product name matches DECATHLON Men Running Superior Grip Cushion Shoes, Jogflow 100 - Black",
+      "status": "passed",
+      "at": "2026.10.12.17.17.54"
+    },
+    {
+      "step": "Product name matched successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.17.54"
+    },
+    {
+      "step": "Verifying that the price and main image are visible",
+      "status": "passed",
+      "at": "2026.10.12.17.17.54"
+    },
+    {
+      "step": "Price and main image visibility verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.17.54"
+    },
+    {
+      "step": "Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white",
+      "status": "passed",
+      "at": "2026.10.12.17.17.55"
+    },
+    {
+      "step": "Product page opened successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.17.59"
+    },
+    {
+      "step": "Waiting for the product to load",
+      "status": "passed",
+      "at": "2026.10.12.17.17.59"
+    },
+    {
+      "step": "Product loaded successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.17.59"
+    },
+    {
+      "step": "Verifying the breadcrumbs",
+      "status": "passed",
+      "at": "2026.10.12.17.17.59"
+    },
+    {
+      "step": "Breadcrumbs verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Verifying the product brand contains KIPRUN",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Product brand verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Verifying the product name contains Kiprun Kipcore black and white",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Product name verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Verifying the product ID contains 8873071",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Product ID verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Verifying that the MRP is visible",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "MRP visibility verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Verifying that the rating and review link are visible",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Rating and review link visibility verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Verifying that at least 1 colour options are visible",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Colour options visibility verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Verifying that the size options and add to cart are visible",
+      "status": "passed",
+      "at": "2026.10.12.17.18.00"
+    },
+    {
+      "step": "Size options and add to cart visibility verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.01"
+    },
+    {
+      "step": "Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white",
+      "status": "passed",
+      "at": "2026.10.12.17.18.03"
+    },
+    {
+      "step": "Product page opened successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.07"
+    },
+    {
+      "step": "Verifying that at least 1 colour options are visible",
+      "status": "passed",
+      "at": "2026.10.12.17.18.08"
+    },
+    {
+      "step": "Colour options visibility verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.08"
+    },
+    {
+      "step": "Selecting the colour option at index 1",
+      "status": "passed",
+      "at": "2026.10.12.17.18.08"
+    },
+    {
+      "step": "Colour option selected successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.10"
+    },
+    {
+      "step": "Verifying that the main image has changed",
+      "status": "passed",
+      "at": "2026.10.12.17.18.10"
+    },
+    {
+      "step": "Main image change verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.10"
+    },
+    {
+      "step": "Colour is a separate variant. URL changed: https://www.decathlon.in/p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white -> https://www.decathlon.in/p/8873070/men-s-running-shoes-kiprun-kipcore-grey",
+      "status": "passed",
+      "at": "2026.10.12.17.18.10"
+    },
+    {
+      "step": "Verifying that the price and size controls are visible",
+      "status": "passed",
+      "at": "2026.10.12.17.18.10"
+    },
+    {
+      "step": "Price and size controls visibility verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.10"
+    },
+    {
+      "step": "Verifying that the application error message is hidden",
+      "status": "passed",
+      "at": "2026.10.12.17.18.10"
+    },
+    {
+      "step": "Application error message hidden state verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.10"
+    },
+    {
+      "step": "Verifying that the page not found message is hidden",
+      "status": "passed",
+      "at": "2026.10.12.17.18.10"
+    },
+    {
+      "step": "Page not found message hidden state verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.10"
+    },
+    {
+      "step": "Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white",
+      "status": "passed",
+      "at": "2026.10.12.17.18.12"
+    },
+    {
+      "step": "Product page opened successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.16"
+    },
+    {
+      "step": "Clicking the add to cart button",
+      "status": "passed",
+      "at": "2026.10.12.17.18.17"
+    },
+    {
+      "step": "Add to cart button clicked successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.18"
+    },
+    {
+      "step": "Verifying that the size error is visible: Please select a size",
+      "status": "passed",
+      "at": "2026.10.12.17.18.18"
+    },
+    {
+      "step": "Size error visibility verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.18"
+    },
+    {
+      "step": "Verifying that the size options remain available",
+      "status": "passed",
+      "at": "2026.10.12.17.18.18"
+    },
+    {
+      "step": "Size options availability verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.18"
+    },
+    {
+      "step": "Verifying that no size is selected",
+      "status": "passed",
+      "at": "2026.10.12.17.18.18"
+    },
+    {
+      "step": "No size selected state verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.18"
+    },
+    {
+      "step": "Verifying that the cart count is 0",
+      "status": "passed",
+      "at": "2026.10.12.17.18.18"
+    },
+    {
+      "step": "Cart count verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.18"
+    },
+    {
+      "step": "Verifying that the user is still on /p/",
+      "status": "passed",
+      "at": "2026.10.12.17.18.18"
+    },
+    {
+      "step": "Product page URL verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.18"
+    },
+    {
+      "step": "Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white",
+      "status": "passed",
+      "at": "2026.10.12.17.18.21"
+    },
+    {
+      "step": "Product page opened successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.25"
+    },
+    {
+      "step": "Verifying that the size options and add to cart are visible",
+      "status": "passed",
+      "at": "2026.10.12.17.18.25"
+    },
+    {
+      "step": "Size options and add to cart visibility verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.28"
+    },
+    {
+      "step": "Selecting the size 6.5",
+      "status": "passed",
+      "at": "2026.10.12.17.18.28"
+    },
+    {
+      "step": "Size selected successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.28"
+    },
+    {
+      "step": "Verifying the low-stock label 3 left if available",
+      "status": "passed",
+      "at": "2026.10.12.17.18.28"
+    },
+    {
+      "step": "Low-stock label is not displayed (not applicable for this size)",
+      "status": "passed",
+      "at": "2026.10.12.17.18.28"
+    },
+    {
+      "step": "Clicking the add to cart button",
+      "status": "passed",
+      "at": "2026.10.12.17.18.28"
+    },
+    {
+      "step": "Add to cart button clicked successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.29"
+    },
+    {
+      "step": "Verifying the cart button text matches Go to cart",
+      "status": "passed",
+      "at": "2026.10.12.17.18.29"
+    },
+    {
+      "step": "Cart button text verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.30"
+    },
+    {
+      "step": "Verifying that the cart count is 1",
+      "status": "passed",
+      "at": "2026.10.12.17.18.30"
+    },
+    {
+      "step": "Cart count verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.30"
+    },
+    {
+      "step": "Verifying that the size error is hidden: Please select a size",
+      "status": "passed",
+      "at": "2026.10.12.17.18.30"
+    },
+    {
+      "step": "Size error hidden state verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.30"
+    },
+    {
+      "step": "Opening the product page /p/8873071/men-s-running-shoes-kiprun-kipcore-black-and-white",
+      "status": "passed",
+      "at": "2026.10.12.17.18.32"
+    },
+    {
+      "step": "Product page opened successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.38"
+    },
+    {
+      "step": "Waiting for the product to load",
+      "status": "passed",
+      "at": "2026.10.12.17.18.38"
+    },
+    {
+      "step": "Product loaded successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.38"
+    },
+    {
+      "step": "Selecting the size 6.5",
+      "status": "passed",
+      "at": "2026.10.12.17.18.38"
+    },
+    {
+      "step": "Size selected successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.39"
+    },
+    {
+      "step": "Clicking the add to cart button",
+      "status": "passed",
+      "at": "2026.10.12.17.18.39"
+    },
+    {
+      "step": "Add to cart button clicked successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.40"
+    },
+    {
+      "step": "Verifying the cart button text matches Go to cart",
+      "status": "passed",
+      "at": "2026.10.12.17.18.40"
+    },
+    {
+      "step": "Cart button text verified successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.41"
+    },
+    {
+      "step": "Closing the add to cart confirmation",
+      "status": "passed",
+      "at": "2026.10.12.17.18.41"
+    },
+    {
+      "step": "Add to cart confirmation closed successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.41"
+    },
+    {
+      "step": "Going to the cart",
+      "status": "passed",
+      "at": "2026.10.12.17.18.41"
+    },
+    {
+      "step": "Navigated to the cart successfully",
+      "status": "passed",
+      "at": "2026.10.12.17.18.42"
+    },
+    {
+      "step": "Failed to wait for the cart items to be visible",
+      "status": "failed",
+      "at": "2026.10.12.17.18.47"
+    },
+    {
+      "step": "screenshot captured: Failed to wait for the cart items to be visible Failure",
+      "status": "passed",
+      "at": "2026.10.12.17.18.47",
+      "screenshot": "C:\\Projects\\decathlon-local\\reports\\screenshots\\Failed to wait for the cart items to be visible Failure-12-10-2026 17-18-47.png"
+    }
+  ]
+}

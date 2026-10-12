@@ -6,7 +6,7 @@ import { expect, Locator, Page } from "@playwright/test";
 import { CartLocators } from "../ui-store/cart.locators";
 import { BasePage } from "./basePage";
 import { logger } from "../utils/logger";
-import { runReport } from "../utils/RunReport";
+import { runReport } from "../utils/runReport";
 import { handleError } from "../utils/errorHandlerUtil";
 
 export class CartPage extends BasePage {

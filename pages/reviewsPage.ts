@@ -6,7 +6,7 @@ import { expect, Page } from "@playwright/test";
 import { ReviewsLocators } from "../ui-store/reviews.locators";
 import { BasePage } from "./basePage";
 import { logger } from "../utils/logger";
-import { runReport } from "../utils/RunReport";
+import { runReport } from "../utils/runReport";
 import { handleError } from "../utils/errorHandlerUtil";
 
 export class ReviewsPage extends BasePage {

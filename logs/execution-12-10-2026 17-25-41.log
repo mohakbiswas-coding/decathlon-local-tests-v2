@@ -1,0 +1,81 @@
+[INFO] 2026.10.12.17.25.42 Launching the home page
+[INFO] 2026.10.12.17.25.46 Home page launched successfully
+[INFO] 2026.10.12.17.25.46 Waiting for the header logo and search field
+[INFO] 2026.10.12.17.25.46 Header logo and search field are visible
+[INFO] 2026.10.12.17.25.46 Opening the search field
+[INFO] 2026.10.12.17.25.50 Search field opened successfully
+[INFO] 2026.10.12.17.25.50 Verifying that the search overlay is open
+[INFO] 2026.10.12.17.25.50 Search overlay is open
+[INFO] 2026.10.12.17.25.50 Verifying that the search input is visible
+[INFO] 2026.10.12.17.25.50 Search input is visible
+[INFO] 2026.10.12.17.25.50 Entering the keyword Kiprun Kipcore
+[INFO] 2026.10.12.17.25.50 Keyword entered successfully
+[INFO] 2026.10.12.17.25.50 Verifying that the search input has the value Kiprun Kipcore
+[INFO] 2026.10.12.17.25.50 Search input value verified successfully
+[INFO] 2026.10.12.17.25.50 Submitting the search
+[INFO] 2026.10.12.17.25.51 Search submitted successfully
+[INFO] 2026.10.12.17.25.51 Waiting for the search results
+[INFO] 2026.10.12.17.25.51 Search results are visible
+[INFO] 2026.10.12.17.25.51 Verifying that the URL contains query
+[INFO] 2026.10.12.17.25.51 URL query verified successfully
+[INFO] 2026.10.12.17.25.51 Opening the product matching the name Kiprun Kipcore
+[INFO] 2026.10.12.17.25.51 Product opened successfully: KIPRUN Men's running shoes, Kiprun Kipcore black and white
+[INFO] 2026.10.12.17.25.51 Waiting for the product to load
+[INFO] 2026.10.12.17.25.51 Product loaded successfully
+[INFO] 2026.10.12.17.25.51 Verifying that the URL has the product path /p/
+[INFO] 2026.10.12.17.25.51 Product path in the URL verified successfully
+[INFO] 2026.10.12.17.25.51 Verifying the product brand contains KIPRUN
+[INFO] 2026.10.12.17.25.51 Product brand verified successfully
+[INFO] 2026.10.12.17.25.51 Verifying the product name contains Kiprun Kipcore black and white
+[INFO] 2026.10.12.17.25.51 Product name verified successfully
+[INFO] 2026.10.12.17.25.51 Verifying the product ID contains 8873071
+[INFO] 2026.10.12.17.25.51 Product ID verified successfully
+[INFO] 2026.10.12.17.25.51 Verifying that the price and main image are visible
+[INFO] 2026.10.12.17.25.51 Price and main image are visible
+[INFO] 2026.10.12.17.25.51 Verifying that the size options and add to cart are visible
+[INFO] 2026.10.12.17.25.53 Size options and add to cart are visible
+[INFO] 2026.10.12.17.25.53 Selecting the size 6.5
+[INFO] 2026.10.12.17.25.53 Size selected successfully
+[INFO] 2026.10.12.17.25.53 Verifying the low-stock label 3 left if available
+[INFO] 2026.10.12.17.25.53 Low-stock label is not displayed (not applicable for this size)
+[INFO] 2026.10.12.17.25.53 Clicking the add to cart button
+[INFO] 2026.10.12.17.25.54 Add to cart button clicked successfully
+[INFO] 2026.10.12.17.25.54 Verifying the cart button text matches Go to cart
+[INFO] 2026.10.12.17.25.54 Cart button text verified successfully
+[INFO] 2026.10.12.17.25.54 Verifying that the cart count is 1
+[INFO] 2026.10.12.17.25.54 Cart count verified successfully
+[INFO] 2026.10.12.17.25.54 Verifying that the size error is hidden: Please select a size
+[INFO] 2026.10.12.17.25.54 Size error is hidden
+[INFO] 2026.10.12.17.25.54 Closing the add to cart confirmation
+[INFO] 2026.10.12.17.25.54 Add to cart confirmation closed successfully
+[INFO] 2026.10.12.17.25.54 Going to the cart
+[INFO] 2026.10.12.17.25.55 Navigated to the cart successfully
+[INFO] 2026.10.12.17.25.55 Waiting for the cart items to be visible
+[INFO] 2026.10.12.17.25.59 Cart items are visible
+[INFO] 2026.10.12.17.25.59 Verifying the cart item count is 1
+[INFO] 2026.10.12.17.25.59 Cart item count verified successfully
+[INFO] 2026.10.12.17.25.59 Verifying the cart item brand contains KIPRUN
+[INFO] 2026.10.12.17.26.00 Cart item brand verified successfully
+[INFO] 2026.10.12.17.26.00 Verifying the cart item name contains Kiprun Kipcore black and white
+[INFO] 2026.10.12.17.26.00 Cart item name verified successfully
+[INFO] 2026.10.12.17.26.00 Verifying that the cart item image is visible
+[INFO] 2026.10.12.17.26.00 Cart item image is visible
+[INFO] 2026.10.12.17.26.00 Verifying the cart item size contains 6.5
+[INFO] 2026.10.12.17.26.00 Cart item size verified successfully
+[INFO] 2026.10.12.17.26.00 Verifying the cart item quantity contains 1
+[INFO] 2026.10.12.17.26.00 Cart item quantity verified successfully
+[INFO] 2026.10.12.17.26.00 Verifying the selling price 4999
+[INFO] 2026.10.12.17.26.00 Selling price verified successfully
+[INFO] 2026.10.12.17.26.00 Verifying the MRP 6499
+[INFO] 2026.10.12.17.26.00 MRP verified successfully
+[INFO] 2026.10.12.17.26.00 Verifying the summary discount 1500
+[INFO] 2026.10.12.17.26.00 Summary discount verified successfully
+[INFO] 2026.10.12.17.26.00 Verifying the summary total 4999
+[INFO] 2026.10.12.17.26.00 Summary total verified successfully
+[INFO] 2026.10.12.17.26.00 Verifying that the guest checkout action is visible
+[INFO] 2026.10.12.17.26.00 Guest checkout action is visible
+[INFO] 2026.10.12.17.26.00 Screenshot captured: TC_35 end-to-end cart summary
+[INFO] 2026.10.12.17.26.00 Clicking the guest checkout action
+[INFO] 2026.10.12.17.26.03 Guest checkout action clicked successfully
+[INFO] 2026.10.12.17.26.03 Verifying that the login gate is displayed
+[INFO] 2026.10.12.17.26.03 Login gate is displayed

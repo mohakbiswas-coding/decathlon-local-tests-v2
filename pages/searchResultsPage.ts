@@ -7,7 +7,7 @@ import { ProductCardLocators } from "../ui-store/productCard.locators";
 import { SearchResultsLocators } from "../ui-store/searchResults.locators";
 import { BasePage } from "./basePage";
 import { logger } from "../utils/logger";
-import { runReport } from "../utils/RunReport";
+import { runReport } from "../utils/runReport";
 import { handleError } from "../utils/errorHandlerUtil";
 
 export class SearchResultsPage extends BasePage {
