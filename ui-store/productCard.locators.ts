@@ -1,6 +1,5 @@
 import { Locator } from '@playwright/test';
 
-/** Locators inside ONE product card. Pass in the card, get its parts. */
 export class ProductCardLocators {
   readonly image: Locator;
   readonly name: Locator;

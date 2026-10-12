@@ -26,19 +26,16 @@ export const logger = {
   warn: (message: string) => write("WARN", message),
   error: (message: string) => write("ERROR", message),
   debug: (message: string) => write("DEBUG", message),
-
-  /** The full formatted lines. */
+  
   lines: (): string[] => [...lines],
-
-  /** The action messages alone, without the level or the time. */
+  
   messages: (): string[] => messages.map((entry) => entry.message),
-
-  /** The action messages written at one level. */
+  
   messagesAt: (level: LogLevel): string[] =>
     messages.filter((entry) => entry.level === level).map((entry) => entry.message)
 };
 
-/** The newest log file in the logs folder — never the alphabetically first. */
+
 export function latestLogFile(): string {
   const files = fs
     .readdirSync(LOG_DIR)

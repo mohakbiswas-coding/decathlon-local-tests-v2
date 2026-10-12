@@ -1,6 +1,4 @@
 import { Locator, Page } from '@playwright/test';
-
-/** Locators of the Cart Items page. All are best guesses - verify with Inspect. */
 export class CartLocators {
   readonly items: Locator;
   readonly itemImage: Locator;

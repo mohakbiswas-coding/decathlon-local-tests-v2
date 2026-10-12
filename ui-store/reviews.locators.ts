@@ -1,6 +1,5 @@
 import { Locator, Page } from '@playwright/test';
 
-/** Locators of the Reviews section on the PDP. All are best guesses - verify with Inspect. */
 export class ReviewsLocators {
   readonly section: Locator;
   readonly overallRating: Locator;

@@ -15,7 +15,6 @@ export class SearchLocators {
     this.trendingTerms = page.getByTestId('trending-search:button');
   }
 
-  /** A section heading whose text comes from the test data. */
   sectionTitle(text: string): Locator {
     return this.page.getByText(text, { exact: true });
   }

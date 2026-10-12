@@ -1,37 +1,23 @@
 import { Locator, Page } from '@playwright/test';
-
-/**
- * Locators of the Product Details Page (PDP).
- * brand, name, price, mainImage and pageNotFound are confirmed.
- * Everything marked "verify with Inspect" is a best guess - check it once in DevTools.
- */
 export class ProductDetailsLocators {
-  // ---- confirmed ----
   readonly brand: Locator;
   readonly name: Locator;
   readonly price: Locator;
   readonly mainImage: Locator;
   readonly pageNotFound: Locator;
   readonly applicationError: Locator;
-
-  // ---- core information ----
   readonly breadcrumbs: Locator;
   readonly productId: Locator;
   readonly mrp: Locator;
   readonly ratingValue: Locator;
   readonly reviewLink: Locator;
-
-  // ---- colour ----
   readonly colourThumbnails: Locator;
   readonly colorOptions: Locator;
-
-  // ---- size and cart ----
   readonly sizeSection: Locator;
   readonly sizeOptions: Locator;
   readonly enabledSizeOptions: Locator;
   readonly sizeError: Locator;
   readonly lowStockLabel: Locator;
-  /** One button that reads "Add to cart" first and "Go to cart" after adding. */
   readonly cartActionButton: Locator;
   readonly gotoCartButton: Locator;
   readonly addToCartConfirmationClose: Locator;
@@ -63,12 +49,10 @@ export class ProductDetailsLocators {
     this.addToCartConfirmationClose = page.locator("div[aria-label='Close']");
   }
 
-  /** The size button whose text is the given size, e.g. "6.5". */
   sizeOption(size: string): Locator {
     return this.sizeOptions.filter({ hasText: new RegExp(`^\\s*${size.replace('.', '\\.')}\\b`) }).first();
   }
 
-  /** A piece of text that is shown on the page, e.g. the "Please select a size" message. */
   textOnPage(text: string): Locator {
     return this.page.getByText(text, { exact: true }).first();
   }

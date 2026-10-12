@@ -1,9 +1,4 @@
 import { Locator, Page } from '@playwright/test';
-
-/**
- * The right-side drawer shared by Product details, Product specifications
- * and Select delivery location. Only one drawer is open at a time.
- */
 export class DrawerLocators {
   readonly ProdDetailsdrawer: Locator;
   readonly ProdDetailscloseButton: Locator;

@@ -7,7 +7,7 @@ import { HeaderLocators } from "../ui-store/header.locators";
 import { ProductDetailsLocators } from "../ui-store/productDetails.locators";
 import { BasePage } from "./basePage";
 import { logger } from "../utils/logger";
-import { runReport } from "../utils/RunReport";
+import { runReport } from "../utils/runReport";
 import { handleError } from "../utils/errorHandlerUtil";
 
 export class ProductPage extends BasePage {
